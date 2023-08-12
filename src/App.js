@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+// Import des librairies React
+import React from "react";
+// Import du fichier de style SCSS
+import './app.scss';
+// Import des composants
+import Router from "./router/Router";
+// Définition du composant sous forme de fonction
+export default function App() {
+  // Eléments retourner par le composant
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router />
     </div>
   );
 }
-
-export default App;
