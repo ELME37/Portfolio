@@ -3,7 +3,7 @@ import React from 'react';
 import {Routes, Route } from 'react-router-dom';
 // Import des composants
 import Home from '../pages/home/Home';
-import Presentation from '../pages/presentation/Presentation';
+import About from '../pages/about/About';
 import Projects from '../pages/projects/Projects';
 import Skills from '../pages/skills/Skills';
 import Contact from '../pages/contact/Contact';
@@ -17,9 +17,9 @@ export default function Router () {
     return (
         <Routes>
             <Route path={ROUTES.home} element={<Home />} />
-            <Route path={ROUTES.presentation} element={<Presentation />} />
-            <Route path={ROUTES.projects()} element={<Projects />} />
+            <Route path={ROUTES.about} element={<About />} />
             <Route path={ROUTES.skills} element={<Skills />} />
+            <Route path={ROUTES.projects()} element={<Projects />} />
             <Route path={ROUTES.contact} element={<Contact />} />
             <Route path="*" element={<Error404 />} />
         </Routes>

@@ -1,8 +1,8 @@
 const ROUTES = {
     home: "/",
-    presentation: "/#presentation",
-    projects: (project = ":id") => `/projects/${project}`,
+    about: "/#about",
     skills: "/skills",
+    projects: (project = ":id") => `/projects/${project}`,
     contact: "/contact",
     
 };
