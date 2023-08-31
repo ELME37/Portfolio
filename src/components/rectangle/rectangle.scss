@@ -1,0 +1,82 @@
+.rectangle.description {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 220px;
+    left: 20px;
+    width: 55%;
+    height: 350px;
+    background: rgb(1, 54, 86);
+    border-radius: 20px;
+    padding: 20px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.rectangle.description::before {
+    content: '';
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    background-image: conic-gradient(transparent, transparent, transparent, rgb(65, 200, 254));
+    animation: rotate 8s linear infinite;
+}
+
+.rectangle.description::after {
+    content: '';
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    background-image: conic-gradient(transparent, transparent, transparent, rgb(195, 165, 158));
+    animation: rotate 8s linear infinite;
+    animation-delay: -4s;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.rectangle.description span {
+    position: absolute;
+    inset: 5px;
+    border-radius: 16px;
+    background: rgb(1, 54, 86);
+    z-index: 1;
+}
+
+.rectangle.brown {
+    position: absolute;
+    top: 180px ;
+    left: 60%;
+    transform: translate(-50%);
+    width: 25%;
+    height: 550px;
+    background-color: rgb(106, 78, 72);
+    border-radius: 10px;
+}
+
+.rectangle.photo {
+    position: absolute;
+    top: 280px ;
+    left: 70%;
+    transform: translate(-50%);
+    width: 60%;
+    height: 400px;
+    background-color: rgb(72, 104, 106);
+    border-radius: 16px;
+    background-image: url('./homme\ ordinateur.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.rectangle__content {
+    text-align: center;
+    color: white;
+    z-index: 2;
+}

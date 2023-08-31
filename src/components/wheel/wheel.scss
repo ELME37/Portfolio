@@ -1,0 +1,60 @@
+.wheel__container {
+  position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.wheel {
+  position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    animation: rotateCircle 30s linear infinite;
+  }
+
+  .savoirFaire{
+    border: 5px rgb(75, 147, 248) solid;
+  }
+
+  .savoirEtre {
+    border: 5px yellow solid;
+  }
+
+  .outils {
+    border: 5px black solid;
+  }
+
+  .langagesetframeworks {
+    border: 5px rgb(39, 248, 53) solid;
+  }
+
+  .adevelopper {
+    border: 5px red solid;
+    
+  }
+
+  .wheel__title {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    text-align: center;
+  }
+
+
+  @keyframes rotateCircle {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .wheel:hover {
+    animation-play-state: paused;
+  }

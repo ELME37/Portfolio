@@ -3,7 +3,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px white solid;
 }
 
 .container__home--image {
@@ -35,6 +34,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     opacity: 0;
     animation: opacity 2s ease-in-out forwards;
     animation-delay: 1s;
@@ -45,7 +45,7 @@
     margin-top: 50px;
     margin-bottom: 10px;
     color: transparent;
-    background-image: linear-gradient(to top, rgb(106, 78, 72) 30%, rgb(65, 200, 254));
+    background-image: linear-gradient(to top, rgb(195, 165, 158) 30%, rgb(65, 200, 254));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-stroke: 0.5px white;
@@ -53,10 +53,11 @@
 
   .job {
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     font-size: 54px;
+    text-align: center;
     color: transparent;
-    background-image: linear-gradient(to top, rgb(106, 78, 72) 30%, rgb(65, 200, 254));
+    background-image: linear-gradient(to top, rgb(195, 165, 158) 30%, rgb(65, 200, 254));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-stroke: 0.5px white; 

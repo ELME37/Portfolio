@@ -1,13 +1,51 @@
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content:  space-between;
     align-items: center;
-    padding-top: 30px;
+    width: 100%;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    visibility: hidden;
+    background-color: transparent;
+    transition: all 0.4s ease;
+}
+
+.header.scrolled--target--about {
+    visibility: visible;
+    background-color: rgb(1, 54, 86);
+    box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.05);
+}
+
+.header.scrolled--target--skills{
+    visibility: visible;
+    background-color: white;
+    box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.05);
+}
+
+.header.scrolled--target--projects {
+    visibility: visible;
+    background-color: rgb(1, 54, 86);
+    box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.05);
+}
+
+.header.scrolled--target--contact{
+    visibility: visible;
+    background-color: white;
+    box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.05);
+}
+
+.header__logo {
+    position: relative;
+    width: 115px;
+    height: 80px;
+    margin-left: 15%;
 }
 
 .header__navigation {
     display: flex;
-    
+    margin-right: 10%;
 }
 
 .navigation__list{
@@ -16,6 +54,8 @@
 }
 
 .navigation__list--item {
+    display: flex;
+    justify-content: center;
     list-style: none;
     text-align: center;
 }
@@ -24,16 +64,16 @@
     display: flex;
     flex-direction: column;
     text-decoration: none;
-    width: 100px;
+    width: 120px;
     margin-left: 20px;
 }
 
 .header__svg--brown {
     font-size: 28px;
     fill: rgb(106, 78, 72);
-    stroke:rgb(65, 200, 254) ;
+    stroke:rgb(65, 200, 254);
     stroke-width: 20px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .header__svg--blue {
@@ -41,26 +81,26 @@
     fill: rgb(65, 200, 254) ;
     stroke:rgb(106, 78, 72);
     stroke-width: 20px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .header__title--brown {
-    color: rgb(195, 165, 158);
+    margin: 0;
+    font-weight: bold;
+    color: rgb(106, 78, 72);
     opacity: 0;
     transform: translateY(-100%);
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .header__title--blue {
+    margin: 0;
+    font-weight: bold;
     color: rgb(65, 200, 254);
     opacity: 0;
     transform: translateY(-100%);
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
-
-.presentation__header span {
-    
-  }
   
 .navigation__item--link:hover .header__title--blue {
     opacity: 1;

@@ -19,7 +19,7 @@ export default function Router () {
             <Route path={ROUTES.home} element={<Home />} />
             <Route path={ROUTES.about} element={<About />} />
             <Route path={ROUTES.skills} element={<Skills />} />
-            <Route path={ROUTES.projects()} element={<Projects />} />
+            <Route path={ROUTES.projects} element={<Projects />} />
             <Route path={ROUTES.contact} element={<Contact />} />
             <Route path="*" element={<Error404 />} />
         </Routes>

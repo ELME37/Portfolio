@@ -1,0 +1,183 @@
+{
+	  "savoirFaire": [
+		{
+		  "id": "seo",
+		  "title": "Connaissance des pratiques SEO",
+		  "image": "competences/savoirFaire/seo.png"
+		},
+		{
+		  "id": "projet",
+		  "title": "Gestion de projet",
+		  "image": "competences/savoirFaire/gestion de projet.png"
+		},
+		{
+		  "id": "responsive",
+		  "title": "Responsive Design",
+		  "image": "competences/savoirFaire/responsive design.png"
+		},
+		{
+		  "id": "api",
+		  "title": "Implémentation API",
+		  "image": "competences/savoirFaire/api.png"
+		},
+		{
+		  "id": "ui",
+		  "title": "Conception d'interfaces utilisateurs",
+		  "image": "competences/savoirFaire/conception design.png"
+		},
+		{
+		  "id": "developpement",
+		  "title": "Développement Site Web / Application / Fonctionnalité",
+		  "image": "competences/savoirFaire/developpement.png"
+		},
+		{
+		  "id": "veille",
+		  "title": "Veille technologique",
+		  "image": "competences/savoirFaire/veille technologique.png"
+		},
+		{
+		  "id": "debogage",
+		  "title": "Debogage",
+		  "image": "competences/savoirFaire/debogage.png"
+		}
+	  ],
+	  "savoirEtre": [
+		{
+		  "id": "curiosite",
+		  "title": "Curiosité",
+		  "image": "competences/savoirEtre/curiosite.png"
+		},
+		{
+		  "id": "autonomie",
+		  "title": "Autonomie",
+		  "image": "competences/savoirEtre/autonomie.png"
+		},
+		{
+		  "id": "innovation",
+		  "title": "Innovation",
+		  "image": "competences/savoirEtre/innovation.png"
+		},
+		{
+		  "id": "adaptabilite",
+		  "title": "Adaptabilité",
+		  "image": "competences/savoirEtre/adaptabilite.png"
+		},
+		{
+		  "id": "force",
+		  "title": "Force de proposition",
+		  "image": "competences/savoirEtre/force de proposition.png"
+		},
+		{
+		  "id": "equipe",
+		  "title": "Esprit d'équipe",
+		  "image": "competences/savoirEtre/esprit d equipe.png"
+		}
+	  ],
+	  "outils": [
+		{
+		  "id": "vsc",
+		  "title": "Visual Studio Code",
+		  "image": "competences/outils/vsc.png"
+		},
+		{
+		  "id": "git",
+		  "title": "Git",
+		  "image": "competences/outils/git.png"
+		},
+		{
+		  "id": "github",
+		  "title": "Github",
+		  "image": "competences/outils/github.png"
+		},
+		{
+		  "id": "figma",
+		  "title": "Figma",
+		  "image": "competences/outils/figma.png"
+		},
+		{
+		  "id": "scrum",
+		  "title": "Méthode Scrum",
+		  "image": "competences/outils/scrum.png"
+		},
+		{
+		  "id": "kanban",
+		  "title": "Kanban",
+		  "image": "competences/outils/kanban.png"
+		}
+	  ],
+	  "langagesetframeworks": [
+		{
+		  "id": "html",
+		  "title": "HTML",
+		  "image": "competences/langages et frameworks/HTML.png"
+		},
+		{
+		  "id": "css",
+		  "title": "CSS",
+		  "image": "competences/langages et frameworks/CSS.png"
+		},
+		{
+		  "id": "javascript",
+		  "title": "Javascript",
+		  "image": "competences/langages et frameworks/JS.png"
+		},
+		{
+		  "id": "react",
+		  "title": "React JS",
+		  "image": "competences/langages et frameworks/REACT JS.png"
+		},
+		{
+		  "id": "sass",
+		  "title": "Sass",
+		  "image": "competences/langages et frameworks/SASS.png"
+		},
+		{
+		  "id": "express",
+		  "title": "Express JS",
+		  "image": "competences/langages et frameworks/EXPRESS JS.png"
+		},
+		{
+		  "id": "node",
+		  "title": "Node JS",
+		  "image": "competences/langages et frameworks/NODE JS.png"
+		},
+		{
+		  "id": "mongodb",
+		  "title": "MongoDB",
+		  "image": "competences/langages et frameworks/MONGO DB.png"
+		}
+	  ],
+	  "adevelopper": [
+		{
+		  "id": "test",
+		  "title": "Tests Unitaires",
+		  "image": "competences/a developper/test.png"
+		},
+		{
+		  "id": "redux",
+		  "title": "Redux",
+		  "image": "competences/a developper/redux.png"
+		},
+		{
+		  "id": "reactnative",
+		  "title": "React Native",
+		  "image": "competences/a developper/reactnative.png"
+		},
+		{
+		  "id": "electron",
+		  "title": "Electron",
+		  "image": "competences/a developper/electron.png"
+		},
+		{
+		  "id": "php",
+		  "title": "PHP / Symfony",
+		  "image": "competences/a developper/php.png"
+		},
+		{
+		  "id": "wordpress",
+		  "title": "WordPress",
+		  "image": "competences/a developper/wordpress.png"
+		}
+	  ]
+  }
+  
