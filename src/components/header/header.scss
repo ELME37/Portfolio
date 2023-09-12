@@ -87,19 +87,25 @@
 .header__title--brown {
     margin: 0;
     font-weight: bold;
-    color: rgb(106, 78, 72);
+    color: rgb(195, 165, 158);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.header__title--brown.inactif {
     opacity: 0;
     transform: translateY(-100%);
-    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .header__title--blue {
     margin: 0;
     font-weight: bold;
     color: rgb(65, 200, 254);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.header__title--blue.inactif {
     opacity: 0;
     transform: translateY(-100%);
-    transition: opacity 0.3s ease, transform 0.3s ease;
 }
   
 .navigation__item--link:hover .header__title--blue {

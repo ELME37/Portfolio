@@ -1,0 +1,25 @@
+.arrow__down {
+    opacity: 0;
+    animation: down 1s infinite linear alternate;
+    animation-delay: 1s;
+    background-image: linear-gradient(to top,rgb(106, 78, 72) 30%,rgb(65, 200, 254));
+    fill: transparent;
+    stroke: white;
+    stroke-width: 10px;
+    height: 60px;
+    width: 60px;
+    padding: 4px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px white solid;
+  }
+
+  .arrow__down:hover {
+    animation-play-state: paused;
+  }
+
+  @keyframes down{
+    0% {position:relative; top:0px; opacity: 0.2}
+    50% {position:relative; top:15px; opacity: 0.5}
+    100% {position:relative; top:30px; opacity: 1}
+  }

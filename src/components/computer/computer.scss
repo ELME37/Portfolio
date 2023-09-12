@@ -1,0 +1,32 @@
+.computer {
+    margin-top: 30px;
+}
+
+.computer__medias {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.computer__image {
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.computer__video--container {
+    position: absolute;
+    top: 5%;
+    left: 22%;
+    width: 56%;
+    height: 70%;
+    background-color: green;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.computer__video {
+    position: absolute;
+    width: 100%;
+}
+

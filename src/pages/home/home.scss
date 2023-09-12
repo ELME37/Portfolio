@@ -9,6 +9,7 @@
     position: relative;
     width: 100%;
     height: 100vh;
+    
 
     &::after{
             content: "";
@@ -25,6 +26,10 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+        opacity: 0;
+        animation: opacity 2s ease-in-out forwards;
+        animation-delay: 1s;
+        z-index: 999;
     }
 }
 
@@ -35,15 +40,13 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    opacity: 0;
-    animation: opacity 2s ease-in-out forwards;
-    animation-delay: 1s;
+    z-index: 999;
 }
 
 .name {
     font-size: 96px;
     margin-top: 50px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     color: transparent;
     background-image: linear-gradient(to top, rgb(195, 165, 158) 30%, rgb(65, 200, 254));
     -webkit-background-clip: text;
@@ -53,14 +56,14 @@
 
   .job {
     margin-top: 0;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
     font-size: 54px;
     text-align: center;
     color: transparent;
-    background-image: linear-gradient(to top, rgb(195, 165, 158) 30%, rgb(65, 200, 254));
+    background-image: linear-gradient(to top, rgb(65, 200, 254) 30%, rgb(195, 165, 158));
     -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-stroke: 0.5px white; 
+    -webkit-text-stroke: 1px white; 
   }
 
   @keyframes opacity {

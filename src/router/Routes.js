@@ -3,7 +3,7 @@ const ROUTES = {
     about: "/#about",
     skills: "/#skills",
     projects : "/#projects",
-    project: (project = ":id") => `/project/${project}`,
+    project: (project = ":id") => `/projects/${project}`,
     contact: "/#contact",
     
 };

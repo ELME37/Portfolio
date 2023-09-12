@@ -1,0 +1,143 @@
+[
+    {
+        "id": "MTUKasa2023OCR",
+        "title": "Agence Kasa",
+        "job": "Développeur Frontend - React Js",
+        "image": "../assets/images/Kasa.png",
+        "sills": [	
+            {
+                "title": "Javascript",
+		        "image": "../competences/langages et frameworks/JS.png"
+            },	
+            {
+                "title": "React JS",
+		        "image": "../competences/langages et frameworks/REACT JS.png"
+            },
+            {
+                "title": "Sass",
+		        "image": "../competences/langages et frameworks/SASS.png"
+            },
+            {
+                "title": "Visual Studio Code",
+		        "image": "../competences/outils/vsc.png"
+            },
+            {
+                "title": "Figma",
+		        "image": "../competences/outils/figma.png"
+            },
+            {
+                "title": "Git",
+		        "image": "../competences/outils/git.png"
+            },
+            {
+                "title": "Github",
+		        "image": "../competences/outils/github.png"
+            },
+            {
+                "title": "Responsive Design",
+                "image": "../competences/savoirFaire/responsive design.png"
+            },
+            {
+                "title": "Implémentation API",
+                "image": "../competences/savoirFaire/api.png"
+            },
+            {
+                "title": "Conception d'interfaces utilisateurs",
+                "image": "../competences/savoirFaire/conception design.png"
+            },
+            {
+                "title": "Développement Site Web / Application / Fonctionnalité",
+                "image": "../competences/savoirFaire/developpement.png"
+            }
+        ],
+        "description" : "La société Kasa a fait le souhait d'une refonte totale de sa plateforme web pour passer à une stack complète en Javascript avec Node Js pour le Backend et React pour le Frontend. Pour cette mission, j'ai joué le rôle du développeur Frontend et mis en place toutes les fonctionnalités demandés tout en respectant l'interface client souhaité.",
+	    "features": [
+            "Projet 100% React JS",
+            "Utilisation de composants (collapse, carrousel)",
+            "Gestion de l'animation dess composants",
+            "Gestion des routes avec React Router",
+            "Gestion des erreurs de routes",
+            "Page 404 personnalisée",
+            "Respect de l'interface utilisateur",
+            "Responsive Design",
+            "Utilisation de Sass pour générer le style",
+            "Implémentation de l'API pour récupérer les données sur les logements"
+        ],
+	    "video": "../assets/videos/Kasa.mp4",
+	    "link": {
+			"github": "https://github.com/ELME37/Projet_P6_Kasa/tree/main/app_kasa"
+		}
+    },
+
+    {
+        "id": "MTUMonvieuxgrimoire2023OCR",
+        "title": "Librairie Mon vieux grimoire",
+        "job": " Développeur Backend - Node Js / Express Js / MongoDB",
+        "image": "../assets/images/Mon_vieux_grimoire.png",
+        "sills": [	
+            {
+                "title": "Node JS",
+                "image": "../competences/langages et frameworks/NODE JS.png"
+            },	
+            {
+                "title": "Express JS",
+                "image": "../competences/langages et frameworks/EXPRESS JS.png"
+            },
+            {
+                "title": "MongoDB",
+		        "image": "../competences/langages et frameworks/MONGO DB.png"
+            },
+            {
+                "title": "Implémentation API",
+                "image": "../competences/savoirFaire/api.png"
+            },
+            {
+                "title": "Visual Studio Code",
+		        "image": "../competences/outils/vsc.png"
+            },
+            {
+                "title": "Git",
+		        "image": "../competences/outils/git.png"
+            },
+            {
+                "title": "Github",
+		        "image": "../competences/outils/github.png"
+            },
+            {
+                "title": "Développement Site Web / Application / Fonctionnalité",
+                "image": "../competences/savoirFaire/developpement.png"
+            }
+        ],
+        "description" : "La société Mon vieux grimoire souhaite lancer un nouveau projet, une application de référencement et de notations de livres. Pour cette mission, j'ai joué le rôle de développeur Backend en initialisant un serveur avec Node JS et une base de données avec MongoDB et en mettant en place l'application avec Express",
+        "features": [
+                "Mise en place d'un server avec Node JS",
+                "Initialisation de l'application avec Express JS",
+                "Gestion des routes avec Express Router",
+                "Mise en place d'une base de données avec MongoDB",
+                "Communication entre l'application et la base de données avec Mongoose",
+                "Mise en place d'un système d'authentification sur l'application avec cryptage du mot de passe",
+                "Création et envoie de tokens au front-end pour authentifier les requêtes",
+                "Ajout de middleware d'authentification pour sécuriser les routes dans l'API",
+                "Sécurisation de l'application avec Helmet et Mongo Sinitize",
+                "Mise en œuvre des opérations CRUD de manière sécurisée",
+                "Création d'une fonctionnalité pour mettre de noter les livres",
+                "Optimation des images envoyées dans le serveur (green code)"
+        ],
+        "video": "../assets/videos/Mon_vieux_grimoire.mp4",
+        "link": {
+                "github": "https://github.com/ELME37/Mon_Vieux_Grimoire/tree/master"
+            }
+    },
+
+        {
+            "id": "MTURHBTP2024",
+            "title": "Application RH - BTP",
+            "job": "En cours de construction",
+            "image": "../assets/images/Site_en_cours.png",
+            "sills": [],
+            "description" : "",
+            "features": "",
+            "video": "",
+            "link": ""
+        }
+]

@@ -1,6 +1,6 @@
 import React from 'react';
 import './logo.scss';
-import logo from "./logo MTU.png";
+import logo from "./logo2.png";
 
 export default function Logo ({ styles = '' }) {
     return (

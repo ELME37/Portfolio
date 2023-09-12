@@ -3,10 +3,11 @@ import React from 'react';
 import {Routes, Route } from 'react-router-dom';
 // Import des composants
 import Home from '../pages/home/Home';
-import About from '../pages/about/About';
-import Projects from '../pages/projects/Projects';
-import Skills from '../pages/skills/Skills';
-import Contact from '../pages/contact/Contact';
+import About from '../components/about/About';
+import Skills from '../components/skills/Skills';
+import Projects from '../components/projects/Projects';
+import Project from '../pages/project/Project';
+import Contact from '../components/contact/Contact';
 import Error404 from '../pages/error404/Error404.jsx';
 import ROUTES from './Routes';
 
@@ -20,6 +21,7 @@ export default function Router () {
             <Route path={ROUTES.about} element={<About />} />
             <Route path={ROUTES.skills} element={<Skills />} />
             <Route path={ROUTES.projects} element={<Projects />} />
+            <Route path={ROUTES.project()} element={<Project />} />
             <Route path={ROUTES.contact} element={<Contact />} />
             <Route path="*" element={<Error404 />} />
         </Routes>

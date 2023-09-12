@@ -1,0 +1,46 @@
+.projects {
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+    display: flex;
+}
+
+.projects__info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.projects__title {
+    font-size: 20px;
+    color: rgb(1, 54, 86);
+}
+
+.skills__list {
+    display: flex;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 50px 5%;
+    width: 100%;
+    border-radius: 25px;
+    margin: 50px 0;
+    padding: 54px;
+    background-color: #F6F6F6;
+    box-shadow: 0px 3px 15px rgb(1, 54, 86);
+}
+
+.projects__citation {
+    color: rgb(1, 54, 86);
+    font-weight: bold;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

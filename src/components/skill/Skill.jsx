@@ -1,7 +1,7 @@
 import React from 'react';
 import './skill.scss';
 
-export default function Skill({ id, title, image, style, onSkillHover, onSkillLeave, type }) {
+export default function Skill({ id, title, image, style, onSkillHover, onSkillLeave, type, styles='' }) {
     const handleSkillHover = () => {
         if (onSkillHover) {
             onSkillHover(title, type);; // Appeler la fonction de gestion du survol avec le titre du skill
@@ -9,11 +9,13 @@ export default function Skill({ id, title, image, style, onSkillHover, onSkillLe
       };
 
       function leaveSkill() {
-        onSkillLeave();
+        if (onSkillLeave) {
+          onSkillLeave();
+        }
       }
 
     return (
-        <div className="skill" style={style} title={title} onMouseEnter={handleSkillHover} onMouseLeave={leaveSkill}>
+        <div className={`skill ${styles}`} style={style} title={title} onMouseEnter={handleSkillHover} onMouseLeave={leaveSkill}>
             <img className='skill__image' src={image} alt={title} />
             <span className='skill__title'>{title}</span>
         </div>

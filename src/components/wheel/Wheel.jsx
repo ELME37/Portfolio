@@ -27,6 +27,7 @@ export default function Wheel({ skills, title, type, styles ='', onSkillHover, o
               onSkillHover={onSkillHover}
               onSkillLeave={onSkillLeave}
               type={type}
+              styles='skill--wheel'
             />
           );
         })}
