@@ -6,38 +6,10 @@
     }
 
     &.logo--header {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        padding: 0;
+
     
         img {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-        }
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    .logo {
-        &.home {
-            img {
-                width: 340px; //
-            }
-        }
-    
-        &.logo--header {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            padding: 0;
-        
-            img {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-            }
+            width: 100px;
         }
     }
 }
@@ -46,20 +18,13 @@
     .logo {
         &.home {
             img {
-                width: 300px; //
+                width: 340px; //
             }
         }
     
         &.logo--header {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            padding: 0;
-        
             img {
-                position: absolute;
-                width: 100%;
-                height: 100%;
+                width: 80px;
             }
         }
     }
@@ -69,20 +34,13 @@
     .logo {
         &.home {
             img {
-                width: 240px; //
+                width: 340px; //
             }
         }
     
         &.logo--header {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            padding: 0;
-        
             img {
-                position: absolute;
-                width: 100%;
-                height: 100%;
+
             }
         }
     }
@@ -92,20 +50,29 @@
     .logo {
         &.home {
             img {
-                width: 200px; //
+                width: 300px; //
             }
         }
     
         &.logo--header {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            padding: 0;
-        
             img {
-                position: absolute;
-                width: 100%;
-                height: 100%;
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .logo {
+        &.home {
+            img {
+                width: 260px; //
+            }
+        }
+    
+        &.logo--header {
+            img {
+
             }
         }
     }
