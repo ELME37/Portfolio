@@ -1,180 +1,180 @@
 {
 	  "savoirFaire": [
 		{
-		  "id": "seo",
+		  "id": "0",
 		  "title": "Connaissance des pratiques SEO",
 		  "image": "competences/savoirFaire/seo.png"
 		},
 		{
-		  "id": "projet",
+		  "id": "1",
 		  "title": "Gestion de projet",
 		  "image": "competences/savoirFaire/gestion de projet.png"
 		},
 		{
-		  "id": "responsive",
+		  "id": "2",
 		  "title": "Responsive Design",
 		  "image": "competences/savoirFaire/responsive design.png"
 		},
 		{
-		  "id": "api",
+		  "id": "3",
 		  "title": "Implémentation API",
 		  "image": "competences/savoirFaire/api.png"
 		},
 		{
-		  "id": "ui",
+		  "id": "4",
 		  "title": "Conception d'interfaces utilisateurs",
 		  "image": "competences/savoirFaire/conception design.png"
 		},
 		{
-		  "id": "developpement",
+		  "id": "5",
 		  "title": "Développement Site Web / Application / Fonctionnalité",
 		  "image": "competences/savoirFaire/developpement.png"
 		},
 		{
-		  "id": "veille",
+		  "id": "6",
 		  "title": "Veille technologique",
 		  "image": "competences/savoirFaire/veille technologique.png"
 		},
 		{
-		  "id": "debogage",
+		  "id": "7",
 		  "title": "Debogage",
 		  "image": "competences/savoirFaire/debogage.png"
 		}
 	  ],
 	  "savoirEtre": [
 		{
-		  "id": "curiosite",
+		  "id": "0",
 		  "title": "Curiosité",
 		  "image": "competences/savoirEtre/curiosite.png"
 		},
 		{
-		  "id": "autonomie",
+		  "id": "1",
 		  "title": "Autonomie",
 		  "image": "competences/savoirEtre/autonomie.png"
 		},
 		{
-		  "id": "innovation",
+		  "id": "2",
 		  "title": "Innovation",
 		  "image": "competences/savoirEtre/innovation.png"
 		},
 		{
-		  "id": "adaptabilite",
+		  "id": "3",
 		  "title": "Adaptabilité",
 		  "image": "competences/savoirEtre/adaptabilite.png"
 		},
 		{
-		  "id": "force",
+		  "id": "4",
 		  "title": "Force de proposition",
 		  "image": "competences/savoirEtre/force de proposition.png"
 		},
 		{
-		  "id": "equipe",
+		  "id": "5",
 		  "title": "Esprit d'équipe",
 		  "image": "competences/savoirEtre/esprit d equipe.png"
 		}
 	  ],
 	  "outils": [
 		{
-		  "id": "vsc",
+		  "id": "0",
 		  "title": "Visual Studio Code",
 		  "image": "competences/outils/vsc.png"
 		},
 		{
-		  "id": "git",
+		  "id": "1",
 		  "title": "Git",
 		  "image": "competences/outils/git.png"
 		},
 		{
-		  "id": "github",
+		  "id": "2",
 		  "title": "Github",
 		  "image": "competences/outils/github.png"
 		},
 		{
-		  "id": "figma",
+		  "id": "3",
 		  "title": "Figma",
 		  "image": "competences/outils/figma.png"
 		},
 		{
-		  "id": "scrum",
+		  "id": "4",
 		  "title": "Méthode Scrum",
 		  "image": "competences/outils/scrum.png"
 		},
 		{
-		  "id": "kanban",
+		  "id": "5",
 		  "title": "Kanban",
 		  "image": "competences/outils/kanban.png"
 		}
 	  ],
 	  "langagesetframeworks": [
 		{
-		  "id": "html",
+		  "id": "0",
 		  "title": "HTML",
 		  "image": "competences/langages et frameworks/HTML.png"
 		},
 		{
-		  "id": "css",
+		  "id": "1",
 		  "title": "CSS",
 		  "image": "competences/langages et frameworks/CSS.png"
 		},
 		{
-		  "id": "javascript",
+		  "id": "2",
 		  "title": "Javascript",
 		  "image": "competences/langages et frameworks/JS.png"
 		},
 		{
-		  "id": "react",
+		  "id": "3",
 		  "title": "React JS",
 		  "image": "competences/langages et frameworks/REACT JS.png"
 		},
 		{
-		  "id": "sass",
+		  "id": "4",
 		  "title": "Sass",
 		  "image": "competences/langages et frameworks/SASS.png"
 		},
 		{
-		  "id": "express",
+		  "id": "5",
 		  "title": "Express JS",
 		  "image": "competences/langages et frameworks/EXPRESS JS.png"
 		},
 		{
-		  "id": "node",
+		  "id": "6",
 		  "title": "Node JS",
 		  "image": "competences/langages et frameworks/NODE JS.png"
 		},
 		{
-		  "id": "mongodb",
+		  "id": "7",
 		  "title": "MongoDB",
 		  "image": "competences/langages et frameworks/MONGO DB.png"
 		}
 	  ],
 	  "adevelopper": [
 		{
-		  "id": "test",
+		  "id": "0",
 		  "title": "Tests Unitaires",
 		  "image": "competences/a developper/test.png"
 		},
 		{
-		  "id": "redux",
+		  "id": "1",
 		  "title": "Redux",
 		  "image": "competences/a developper/redux.png"
 		},
 		{
-		  "id": "reactnative",
+		  "id": "2",
 		  "title": "React Native",
 		  "image": "competences/a developper/reactnative.png"
 		},
 		{
-		  "id": "electron",
+		  "id": "3",
 		  "title": "Electron",
 		  "image": "competences/a developper/electron.png"
 		},
 		{
-		  "id": "php",
+		  "id": "4",
 		  "title": "PHP / Symfony",
 		  "image": "competences/a developper/php.png"
 		},
 		{
-		  "id": "wordpress",
+		  "id": "5",
 		  "title": "WordPress",
 		  "image": "competences/a developper/wordpress.png"
 		}

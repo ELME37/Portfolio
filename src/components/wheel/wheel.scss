@@ -1,41 +1,70 @@
-.wheel__container {
-  position: relative;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+.wheel {
+    position: relative;
+    width: 300px;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-
-.wheel {
-  position: absolute;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    animation: rotateCircle 30s linear infinite;
+    //animation: rotateCircle 30s linear infinite;
   }
 
-  .savoirFaire{
-    border: 5px rgb(75, 147, 248) solid;
+  .wheel.savoirFaire::after {
+    content: '';
+    top: 0;
+    width: 200px;
+    height: 200px;
+    border: 8px rgb(75, 147, 248) solid;
+    border-radius: 50%;
+  }
+
+  .savoirFaire {
+    
+  }
+
+  .wheel.savoirEtre::after {
+    content: '';
+    top: 0;
+    width: 200px;
+    height: 200px;
+    border: 8px yellow solid;
+    border-radius: 50%;
   }
 
   .savoirEtre {
-    border: 5px yellow solid;
+    top: -80px;
+    left: 19%;
   }
 
-  .outils {
-    border: 5px black solid;
+  .wheel.outils::after {
+    content: '';
+    top: 0;
+    width: 200px;
+    height: 200px;
+    border: 8px black solid;
+    border-radius: 50%;
+  }
+
+  .wheel.langagesetframeworks::after {
+    content: '';
+    top: 0;
+    width: 200px;
+    height: 200px;
+    border: 8px rgb(39, 248, 53) solid;
+    border-radius: 50%;
   }
 
   .langagesetframeworks {
-    border: 5px rgb(39, 248, 53) solid;
+    top: -80px;
+    left: -19%;
   }
 
-  .adevelopper {
-    border: 5px red solid;
-    
+  .wheel.adevelopper::after {
+    content: '';
+    top: 0;
+    width: 200px;
+    height: 200px;
+    border: 8px red solid;
+    border-radius: 50%;
   }
 
   .wheel__title {
@@ -57,4 +86,24 @@
 
   .wheel:hover {
     animation-play-state: paused;
+  }
+
+  .toogle {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 4px rgba(0,0,0,0.15);
+    font-size: 2em;
+    transition: transform 1.25s;
+  }
+
+  .wheel.active .toogle {
+    transform: rotate(315deg);
   }

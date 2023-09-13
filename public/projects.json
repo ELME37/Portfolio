@@ -50,14 +50,16 @@
                 "image": "../competences/savoirFaire/developpement.png"
             }
         ],
-        "description" : "La société Kasa a fait le souhait d'une refonte totale de sa plateforme web pour passer à une stack complète en Javascript avec Node Js pour le Backend et React pour le Frontend. Pour cette mission, j'ai joué le rôle du développeur Frontend et mis en place toutes les fonctionnalités demandés tout en respectant l'interface client souhaité.",
-	    "features": [
+        "description" : ["La société Kasa a fait le souhait d'une refonte totale de sa plateforme web pour passer à une stack complète en Javascript avec Node Js pour le Backend et React pour le Frontend. Pour cette mission, j'ai joué le rôle du développeur Frontend et mis en place toutes les fonctionnalités demandés tout en respectant l'interface client souhaitée.",
+                        "Après quelques interrogations sur comment structurer une application React; j'ai rapidement compris la puissance de cet outil rendant les applications fluides et plus rapides avec la création et l'utilisation des composants."
+        ],
+            "features": [
             "Projet 100% React JS",
             "Utilisation de composants (collapse, carrousel)",
-            "Gestion de l'animation dess composants",
+            "Gestion de l'animation des composants",
             "Gestion des routes avec React Router",
             "Gestion des erreurs de routes",
-            "Page 404 personnalisée",
+            "Page Erreur 404 personnalisée",
             "Respect de l'interface utilisateur",
             "Responsive Design",
             "Utilisation de Sass pour générer le style",
@@ -108,7 +110,10 @@
                 "image": "../competences/savoirFaire/developpement.png"
             }
         ],
-        "description" : "La société Mon vieux grimoire souhaite lancer un nouveau projet, une application de référencement et de notations de livres. Pour cette mission, j'ai joué le rôle de développeur Backend en initialisant un serveur avec Node JS et une base de données avec MongoDB et en mettant en place l'application avec Express",
+        "description" : [
+                "La société Mon vieux grimoire a fait le souhait de lancer son nouveau projet, une application de référencement et de notations de livres. Pour cette mission, j'ai joué le rôle de développeur Backend en initialisant et configurant un serveur avec Node JS et une base de données avec MongoDB et en mettant en place l'application avec Express.",
+                "Il s'agit de ma première mission en tant que développeur Backend, la difficulté était de comprendre comment ces différentes technologies interagissent. Après cette apprentissage, j'ai pu visualiser la haute performance que pouvez apporter cette stack JavaScript complète qui garantit un écosystème riche, sécurisé et flexible."
+        ],
         "features": [
                 "Mise en place d'un server avec Node JS",
                 "Initialisation de l'application avec Express JS",
@@ -120,7 +125,7 @@
                 "Ajout de middleware d'authentification pour sécuriser les routes dans l'API",
                 "Sécurisation de l'application avec Helmet et Mongo Sinitize",
                 "Mise en œuvre des opérations CRUD de manière sécurisée",
-                "Création d'une fonctionnalité pour mettre de noter les livres",
+                "Création d'une fonctionnalité pour permettre de noter les livres",
                 "Optimation des images envoyées dans le serveur (green code)"
         ],
         "video": "../assets/videos/Mon_vieux_grimoire.mp4",
@@ -135,8 +140,8 @@
             "job": "En cours de construction",
             "image": "../assets/images/Site_en_cours.png",
             "sills": [],
-            "description" : "",
-            "features": "",
+            "description" : [],
+            "features": [],
             "video": "",
             "link": ""
         }

@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import './project.scss';
+import ROUTES from '../../router/Routes';
 import Error404 from '../error404/Error404';
 import Computer from '../../components/computer/Computer';
 import Layout from '../../components/layout/Layout';
@@ -71,11 +73,24 @@ export default function Project () {
                             ))}
                         </div>
                     </div>
-
-                    <p className='project__description'>{project.description}</p>
+                    <div className='project__presentation'>
+                        <div className='project__description'>
+                            <h3 className='description--title'>Description du projet</h3>
+                            {project.description.map((description, id) => (
+                                <p className='description--text' key={id}>{description}</p>
+                            ))} 
+                        </div>
+                        <div className='project__features'>
+                            <h3 className='features--title'>Spécifications du project</h3>
+                            <ul className='project__features--list'>
+                                {project.features.map((features, id) => (
+                                    <li className='features__list--item' key={id}>{features}</li>
+                                ))} 
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-
-                <p>lien pour retour vers page home</p>
+                <HashLink className="backToProjects" to={ROUTES.projects}>Retourner vers les projets</HashLink>
            </Layout>
         </div>
     );

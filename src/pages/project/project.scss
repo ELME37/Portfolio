@@ -56,6 +56,8 @@
     padding: 10px 20px;
     border-radius: 4px;
     background-color: rgb(1, 54, 86);
+    border: 2px rgb(1, 54, 86) solid;
+
     overflow: hidden;
 }
 
@@ -79,5 +81,81 @@
     }
     100% {
         transform: translateX(0%);
+    }
+}
+
+.project__presentation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.project__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 4px;
+    margin: 0;
+    padding: 0 20px;
+    border: 2px rgb(65, 200, 254) solid;
+}
+
+.description--title {
+    font-weight: bold;
+    text-decoration: underline;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.description--text {
+    margin-top: 20px;
+    line-height: 150%;
+}
+
+.project__features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 4px;
+    border: 2px rgb(65, 200, 254) solid;
+}
+
+.features--title {
+    font-weight: bold;
+    text-decoration: underline;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.backToProjects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24%;
+    margin: 30px auto;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: rgb(1, 54, 86);
+    color: white;
+    border: 2px rgb(1, 54, 86) solid;
+    border-radius: 10px;
+    font-style: italic;
+}
+
+.backToProjects:hover {
+    animation: backToProjects ease forwards;
+}
+
+@keyframes backToProjects {
+    0% {
+        background-color: rgb(1, 54, 86);
+        color: white;
+    }
+    100% {
+        background-color: white;
+        color: rgb(1, 54, 86);
+        
     }
 }
