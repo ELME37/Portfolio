@@ -53,11 +53,8 @@
             font-size: 96px;
             margin-top: 50px;
             margin-bottom: 20px;
-            color: transparent;
-            background-image: linear-gradient(to top, rgb(106, 78, 72) 30%, rgb(65, 200, 254));
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-stroke: 0.2px white;
+            color: rgb(132, 66, 26);
+            text-shadow: 2px 2px 4px white;
         }
 
         .job {
@@ -65,11 +62,8 @@
             margin-bottom: 80px;
             font-size: 54px;
             text-align: center;
-            color: transparent;
-            background-image: linear-gradient(to top, rgb(65, 200, 254) 30%, rgb(195, 165, 158));
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-stroke: 1px white; 
+            color: rgb(132, 66, 26);
+            text-shadow: 2px 2px 4px white;
         }
     }
 }
