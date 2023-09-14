@@ -7,13 +7,15 @@
     border-radius: 50%;
     cursor: pointer;
     position: fixed;
-    right: 30px;
-     bottom: 30px;
-     z-index: 998;
-     border: 2px rgb(65, 200, 254) solid;
-     opacity: 0.4;
+    right: 10px;
+    bottom: 50px;
+    z-index: 998;
+    border: 2px rgb(65, 200, 254) solid;
+    opacity: 0.4;
+
+     &:hover {
+      opacity: 1;
+    }
   }
 
-  .arrow__up:hover {
-    opacity: 1;
-  }
+  
