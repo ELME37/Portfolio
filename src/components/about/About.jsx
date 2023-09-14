@@ -23,24 +23,24 @@ export default function About () {
         <div className='about' id='about' onClick={handleOutsideClick}>
             <Layout>
                 <h2 className='about__title'><span className='skills__hook blue'>&lt;</span> A propos <span className='skills__hook red'>/&gt;</span></h2>
-                <Rectangle styles='description' 
-                    children={
-                        <>
-                            <p className='presentation'>Je suis Mickaël TURQUAIS, <strong>Développeur Web - Mobile</strong> spécialisé dans les technologies <strong>Javascript</strong> basé en <strong>Indre et Loire</strong>.</p>
-                            <hr/>
-                            <p className='presentation'>Je suis axé sur des valeurs clés telles que la qualité, l'écoute, la créativité et la satisfaction du client.</p>
-                            <hr/>
-                            <p className='presentation'>Ensemble collaborons pour transformer votre vision en une réalité numérique captivante et inovante.</p>
-                            <button className='btn__modal' onClick={toggleModal}><svg className='plusInfos' xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
-                                <title>En savoir +</title>
-                                <desc>En savoir + Logo</desc>
-                                <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM232 344V280H168c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H280v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"/></svg>
-                            </button>
-                        </>
-                    } 
-                />
-                <Rectangle styles='brown'/>
-                <Rectangle styles='photo'/>
+                <div className='about__description'>
+                    <Rectangle styles='description' 
+                        children={
+                            <>
+                                <p className='presentation'>Je suis Mickaël TURQUAIS, <strong>Développeur Web - Mobile</strong> spécialisé dans les technologies <strong>Javascript</strong> basé en <strong>Indre et Loire</strong>.</p>
+                                <hr/>
+                                <p className='presentation'>Je suis axé sur des valeurs clés telles que la qualité, l'écoute, la créativité et la satisfaction du client.</p>
+                                <hr/>
+                                <p className='presentation'>Ensemble collaborons pour transformer votre vision en une réalité numérique captivante et inovante.</p>
+                                <button className='btn__modal' onClick={toggleModal}><svg className='plusInfos' xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                                    <title>En savoir +</title>
+                                    <desc>En savoir + Logo</desc>
+                                    <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM232 344V280H168c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H280v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"/></svg>
+                                </button>
+                            </>
+                        } 
+                    />
+                </div>
                 <Modal isOpen={isModalOpen} toggleModal={toggleModal} 
                     children={
                         <>

@@ -44,8 +44,6 @@
         .header__logo {
             margin-left: 5%;
             margin-bottom: 10px;
-            background-color: rgb(65, 200, 254);
-            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
         }
 
         .header__navigation {
@@ -130,11 +128,10 @@
 @media screen and (max-width: 780px) {
     .header {
         .header__header {
-            flex-direction: column;
-            justify-content: center;
+
     
             .header__navigation {
-                justify-content: center;
+                justify-content: flex-end;
                 align-items: center;
                 width: 100%;
                 margin-bottom: 0;
@@ -145,7 +142,7 @@
                     padding: 0;
     
                     .navigation__list--item {
-                        width: 120px;
+                        width: 80px;
                     }
                 }
             }
@@ -159,7 +156,11 @@
             .header__navigation {
                 .navigation__list{
                     .navigation__list--item {
-                        width: 90px;
+                        width: 80px;
+                        
+                        &:first-child {
+                            display: none;
+                          }
     
                         .navigation__item--link {
                             .header__svg {
@@ -184,7 +185,7 @@
             .header__navigation {
                 .navigation__list{
                     .navigation__list--item {
-                        width: 80px;
+                        width: 70px;
     
                         .navigation__item--link {
                             .header__svg {
@@ -202,10 +203,12 @@
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     .header {    
         .header__header {
-    
+            .header__logo {
+                margin-left: 1%;
+            }
             .header__navigation {
                 .navigation__list{
                     .navigation__list--item {
@@ -222,3 +225,25 @@
         }
     }
 }
+
+@media screen and (max-width: 400px) {
+    .header {    
+        .header__header {
+    
+            .header__navigation {
+                .navigation__list{
+                    .navigation__list--item {
+                        width: 50px;
+    
+                        .navigation__item--link {
+                            .header__title  {
+                                font-size: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

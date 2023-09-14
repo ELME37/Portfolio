@@ -6,10 +6,13 @@
 }
 
 .about__title {
-    position: absolute;
-    top: 620px;
     color: rgb(1, 54, 86);
     font-size: 20px;
+}
+
+.about__description {
+    display: flex;
+
 }
 
 hr {
