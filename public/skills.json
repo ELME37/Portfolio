@@ -77,32 +77,32 @@
 		{
 		  "id": "0",
 		  "title": "Visual Studio Code",
-		  "image": "competences/outils/vsc.png"
+		  "image": "competences/outils/VSC.png"
 		},
 		{
 		  "id": "1",
 		  "title": "Git",
-		  "image": "competences/outils/git.png"
+		  "image": "competences/outils/GIT.png"
 		},
 		{
 		  "id": "2",
 		  "title": "Github",
-		  "image": "competences/outils/github.png"
+		  "image": "competences/outils/GITHUB.png"
 		},
 		{
 		  "id": "3",
 		  "title": "Figma",
-		  "image": "competences/outils/figma.png"
+		  "image": "competences/outils/FIGMA.png"
 		},
 		{
 		  "id": "4",
 		  "title": "Méthode Scrum",
-		  "image": "competences/outils/scrum.png"
+		  "image": "competences/outils/SCRUM.png"
 		},
 		{
 		  "id": "5",
 		  "title": "Kanban",
-		  "image": "competences/outils/kanban.png"
+		  "image": "competences/outils/KANBAN.png"
 		}
 	  ],
 	  "langagesetframeworks": [
@@ -161,7 +161,7 @@
 		{
 		  "id": "2",
 		  "title": "React Native",
-		  "image": "competences/a developper/reactnative.png"
+		  "image": "competences/a developper/reactNative.png"
 		},
 		{
 		  "id": "3",

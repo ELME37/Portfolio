@@ -47,6 +47,10 @@
     margin-right: 10px;
 }
 
+.skills__list {
+    display: flex;
+}
+
 .project__skills {
     display: flex;
     justify-content: center;
@@ -158,4 +162,8 @@
         color: rgb(1, 54, 86);
         
     }
+}
+
+@media screen and (max-width: 1000px) {
+
 }
