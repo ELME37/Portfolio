@@ -4,7 +4,7 @@ import './skill.scss';
 export default function Skill({ id, title, image, style, onSkillHover, onSkillLeave, type, styles='' }) {
     const handleSkillHover = () => {
         if (onSkillHover) {
-            onSkillHover(title, type);; // Appeler la fonction de gestion du survol avec le titre du skill
+            onSkillHover(title, type);
         }
       };
 

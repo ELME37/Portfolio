@@ -23,7 +23,30 @@
     border: 2px rgb(65, 200, 254) solid;
     width: 50%;
   }
-  
+
+  .modal--skills {
+    .btn__close {
+      display: none;
+    }
+
+    .modal__photo  {
+      display: none;
+    }
+
+  }
+
+  .modal__infos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 30px;
+    margin: 20px 0 40px 0;
+    font-weight: bold;
+    white-space: nowrap;
+    font-size: 20px;
+}
+ 
   .btn__close {
     position: absolute;
     display: flex;

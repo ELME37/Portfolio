@@ -1,18 +1,18 @@
 .skill--wheel {
     position: absolute;
-    left: -30px;
-    transform-origin: 160px;
+    left: 0;
+    transform-origin: 200px;
     transition: 0.5s;
     transition-delay: calc(0.1s * var(--i));
-    transform: rotate(0deg) translateX(120px);
+    transform: rotate(0deg) translateX(180px);
 }
 
 .skill__image {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40px;
     width: 40px;
+    height: 40px;
     object-fit: cover;
     transform: rotate(calc(-360deg / var(--numberOfSkills) * var(--i)));
 }

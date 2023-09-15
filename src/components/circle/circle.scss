@@ -1,0 +1,54 @@
+.circle {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 23%;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: transparent;
+
+    &::after {
+        content: "";
+        display: block;
+        padding-bottom: 100%;
+    }
+}
+
+.circle--blue {
+    top: 6.8%;
+    left: 12.6%;
+}
+
+.circle--black {
+    top: 6.8%;
+    left: 38.5%;
+}
+
+.circle--red {
+    top: 6.8%;
+    left: 64.4%;
+}
+
+.circle--yellow {
+    top: 34%;
+    left: 25.6%;
+}
+
+.circle--green {
+    top: 34%;
+    left: 51.5%;
+}
+
+.circle__title {
+    position: absolute;
+    font-weight: bold;
+    color: white;
+}
+
+.title--top {
+    top: 30%;
+}
+
+.title--bottom {
+    top: 50%;
+}

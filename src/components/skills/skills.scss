@@ -29,12 +29,10 @@
 }
 
 .citation {
-    color: white;
-    white-space: nowrap;
     display: flex;
-    top: 365px;
     justify-content: center;
     align-items: center;
+    color: white;
 }
 
 .citation__texte {
@@ -56,3 +54,17 @@
 .blue {
     color: rgb(65, 200, 254);
 }
+
+.skills__jo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.skills__jo img {
+    width: 80%;
+}
+
+    
