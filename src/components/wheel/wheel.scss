@@ -11,73 +11,11 @@
   .wheel.savoirFaire::after {
     content: '';
     top: 0;
-    width: 280px;
-    height: 280px;
-    border: 20px gold solid;
+    width: 260px;
+    height: 260px;
+    border: 20px yellow solid;
     border-radius: 50%;
   }
-
-  .wheel.savoirEtre::after {
-    content: '';
-    top: 0;
-    width: 200px;
-    height: 200px;
-    border: 8px yellow solid;
-    border-radius: 50%;
-  }
-
-  .savoirEtre {
-    position: absolute;
-    top: 320px;
-    left: 0px;
-  }
-
-  .wheel.outils::after {
-    content: '';
-    top: 0;
-    width: 200px;
-    height: 200px;
-    border: 8px black solid;
-    border-radius: 50%;
-  }
-
-  .wheel.outils {
-    position: absolute;
-    top: 30px;
-    left: 50%;
-    transform: translate(-50%);
-  }
-
-  .wheel.langagesetframeworks::after {
-    content: '';
-    top: 0;
-    width: 200px;
-    height: 200px;
-    border: 8px rgb(39, 248, 53) solid;
-    border-radius: 50%;
-  }
-
-  .langagesetframeworks {
-    position: absolute;
-    top: 320px;
-    left: 665px;
-  }
-
-  .wheel.adevelopper::after {
-    content: '';
-    top: 0;
-    width: 200px;
-    height: 200px;
-    border: 8px red solid;
-    border-radius: 50%;
-  }
-
-  .wheel.adevelopper {
-    position: absolute;
-    top: 30px;
-    right: 0;
-  }
-
 
   .wheel__title {
     position: absolute;

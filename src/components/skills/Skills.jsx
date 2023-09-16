@@ -20,15 +20,16 @@ export default function Skills() {
     styles: '',
   });
 
+  console.log(wheelData)
+
   const handleCircleClick = (title, skills, type, styles) => {
-    console.log("Circle clicked:", title, skills, styles, type);
     setWheelData({
       title,
       skills,
       styles,
       type,
     });
-    toggleModal(); // Ouvrez le modal après avoir mis à jour les données
+    toggleModal(); 
   };
 
 const toggleModal = () => {
@@ -60,18 +61,22 @@ const toggleModal = () => {
         <div className='skills__jo'>
           <img src={jo} alt="anneaux jo" />
           <Circle styles='circle--blue' circleStyles='plus--top' title='Savoir Faire' isTop={true} 
-          toggleModal={() => handleCircleClick('Savoir-Faire', skillData.savoirFaire, 'savoirFaire', 'Savoir Faire')}/>
-          <Circle styles='circle--black' circleStyles='plus--top' title='Outils'isTop={true} toggleModal={toggleModal}/>
-          <Circle styles='circle--red' circleStyles='plus--top' title='A développer' isTop={true} toggleModal={toggleModal}/>
-          <Circle styles='circle--yellow' circleStyles='plus--bottom' title='Savoir Etre' isTop={false} toggleModal={toggleModal}/>
-          <Circle styles='circle--green' circleStyles='plus--bottom' title='Langages et Frameworks' isTop={false} toggleModal={toggleModal}/>
+          toggleModal={() => handleCircleClick('Savoir-Faire', skillData.savoirFaire, 'savoirFaire', 'savoirFaire')}/>
+          <Circle styles='circle--black' circleStyles='plus--top' title='Outils'isTop={true} 
+          toggleModal={() => handleCircleClick('Outils', skillData.outils, 'outils', 'outils')}/>
+          <Circle styles='circle--red' circleStyles='plus--top' title='A développer' isTop={true} 
+          toggleModal={() => handleCircleClick('A développer', skillData.adevelopper, 'adevelopper', 'adevelopper')}/>
+          <Circle styles='circle--yellow' circleStyles='plus--bottom' title='Savoir Etre' isTop={false} 
+          toggleModal={() => handleCircleClick('Savoir-Etre', skillData.savoirEtre, 'savoirEtre', 'savoirEtre')}/>
+          <Circle styles='circle--green' circleStyles='plus--bottom' title='Langages et Frameworks' isTop={false} 
+          toggleModal={() => handleCircleClick('Langages et Frameworks', skillData.langagesetframeworks, 'langagesetframeworks', 'langagesetframeworks')}/>
         </div>
         <div className='wheels'>
         {isModalOpen && (
           <Modal isOpen={isModalOpen} toggleModal={toggleModal} styles='modal--skills'>
             <div className='modal__infos'>
               {isHovered ? (
-                  <p> <span className='skills__hook'>&lt;</span> {hoveredSkillTitle} <span className='skills__hook'>/&gt;</span></p>
+                  <p> <span className='skills__hook blue'>&lt;</span> {hoveredSkillTitle} <span className='skills__hook red'>/&gt;</span></p>
               ) : (
                   <h3 className='modal__title'><span className='skills__hook blue'>&lt;</span> {wheelData.title} <span className='skills__hook red'>/&gt;</span></h3>
               )}

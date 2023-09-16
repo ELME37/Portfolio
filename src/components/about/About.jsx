@@ -13,14 +13,8 @@ export default function About () {
         setIsModalOpen(!isModalOpen);
     };
 
-    const handleOutsideClick = (e) => {
-        if (isModalOpen && e.target.classList.contains('about')) {
-            toggleModal();
-        }
-    };
-
     return (
-        <div className='about' id='about' onClick={handleOutsideClick}>
+        <div className='about' id='about'>
             <Layout>
                 <h2 className='about__title'><span className='skills__hook blue'>&lt;</span> A propos <span className='skills__hook red'>/&gt;</span></h2>
                 <div className='about__description'>
@@ -41,7 +35,7 @@ export default function About () {
                         } 
                     />
                 </div>
-                <Modal isOpen={isModalOpen} toggleModal={toggleModal} 
+                <Modal isOpen={isModalOpen} toggleModal={toggleModal}  styles='modal__about'
                     children={
                         <>
                             <p className='modal__presentation'>Fort de dix années d'expérience en tant que Gestionnaire des Ressources Humaines, j'ai évolué dans le monde dynamique de la gestion du personnel, développant des compétences précieuses en gestion du changement, en résolution de problèmes et en communication.</p>
