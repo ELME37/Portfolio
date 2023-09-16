@@ -7,7 +7,13 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.9);
+    background-color: rgba(0,0,0,0.8);
+
+    .modal--skills {
+      background-color: rgba(214,194,120,255);
+      border-radius: 60% 40% 47% 53% / 52% 57% 43% 48% ;
+      border: none;
+    }
   }
   
   .modal-content {
@@ -42,7 +48,7 @@
     align-items: center;
     color: white;
     height: 30px;
-    margin: 20px 0 40px 0;
+    margin: 20px 0;
     font-weight: bold;
     white-space: nowrap;
     font-size: 20px;

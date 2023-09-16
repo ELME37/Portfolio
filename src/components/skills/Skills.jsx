@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import './skills.scss';
 import jo from'./jo.png'
 import Wheel from '../../components/wheel/Wheel';
@@ -12,6 +12,8 @@ export default function Skills() {
   const [hoveredSkillTitle, setHoveredSkillTitle] = useState(null);
   const [isHovered, setIsHovered] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [currentWheelIndex, setCurrentWheelIndex] = useState(0);
+  const [isWheelActive, setIsWheelActive] = useState(false);
 
   const [wheelData, setWheelData] = useState({
     title: '',
@@ -20,21 +22,79 @@ export default function Skills() {
     styles: '',
   });
 
-  console.log(wheelData)
+  const circlesData = useMemo(() => [
+    {
+      id: 'savoirFaire',
+      title: 'Savoir Faire',
+      skills: skillData.savoirFaire,
+      styles: 'savoirFaire',
+      type: 'savoirFaire',
+    },
+    {
+      id: 'outils',
+      title: 'Outils',
+      skills: skillData.outils,
+      styles: 'outils',
+      type: 'outils',
+    },
+    {
+      id: 'adevelopper',
+      title: 'A développer',
+      skills: skillData.adevelopper,
+      styles: 'adevelopper',
+      type: 'adevelopper',
+    },
+    {
+      id: 'savoirEtre',
+      title: 'Savoir Etre',
+      skills: skillData.savoirEtre,
+      styles: 'savoirEtre',
+      type: 'savoirEtre',
+    },
+    {
+      id: 'langagesetframeworks',
+      title: 'Langages et Frameworks',
+      skills: skillData.langagesetframeworks,
+      styles: 'langagesetframeworks',
+      type: 'langagesetframeworks',
+    },
+  ], [skillData]);
 
-  const handleCircleClick = (title, skills, type, styles) => {
-    setWheelData({
-      title,
-      skills,
-      styles,
-      type,
-    });
-    toggleModal(); 
+  const handleCircleClick = (id) => {
+    const selectedCircle = circlesData.find((circle) => circle.id === id);
+    setWheelData(selectedCircle);
+    toggleModal();
   };
 
 const toggleModal = () => {
   setIsModalOpen(!isModalOpen);
+  handleToggleClick()
 };
+
+const handleToggleClick = () => {
+  setIsWheelActive(false)
+  setTimeout(() => {
+    setIsWheelActive(true);
+  }, 800);
+}
+
+const handleNextWheel = () => {
+  setCurrentWheelIndex((prevIndex) =>
+    prevIndex === circlesData.length - 1 ? 0 : prevIndex + 1
+  );
+};
+
+const handlePrevWheel = () => {
+  setCurrentWheelIndex((prevIndex) =>
+    prevIndex === 0 ? circlesData.length - 1 : prevIndex - 1
+  );
+};
+
+useEffect(() => {
+  const selectedCircle = circlesData[currentWheelIndex];
+  setWheelData(selectedCircle);
+}, [currentWheelIndex, circlesData]);
+
 
   useEffect(() => {
     fetch('/skills.json')
@@ -60,16 +120,16 @@ const toggleModal = () => {
         </div>
         <div className='skills__jo'>
           <img src={jo} alt="anneaux jo" />
-          <Circle styles='circle--blue' circleStyles='plus--top' title='Savoir Faire' isTop={true} 
-          toggleModal={() => handleCircleClick('Savoir-Faire', skillData.savoirFaire, 'savoirFaire', 'savoirFaire')}/>
-          <Circle styles='circle--black' circleStyles='plus--top' title='Outils'isTop={true} 
-          toggleModal={() => handleCircleClick('Outils', skillData.outils, 'outils', 'outils')}/>
-          <Circle styles='circle--red' circleStyles='plus--top' title='A développer' isTop={true} 
-          toggleModal={() => handleCircleClick('A développer', skillData.adevelopper, 'adevelopper', 'adevelopper')}/>
-          <Circle styles='circle--yellow' circleStyles='plus--bottom' title='Savoir Etre' isTop={false} 
-          toggleModal={() => handleCircleClick('Savoir-Etre', skillData.savoirEtre, 'savoirEtre', 'savoirEtre')}/>
-          <Circle styles='circle--green' circleStyles='plus--bottom' title='Langages et Frameworks' isTop={false} 
-          toggleModal={() => handleCircleClick('Langages et Frameworks', skillData.langagesetframeworks, 'langagesetframeworks', 'langagesetframeworks')}/>
+            <Circle styles='circle--blue' circleStyles='plus--top' title='Savoir Faire' isTop={true} 
+            toggleModal={() => handleCircleClick("savoirFaire")}/>,
+            <Circle styles='circle--black' circleStyles='plus--top' title='Outils'isTop={true} 
+            toggleModal={() => handleCircleClick("outils")}/>
+            <Circle styles='circle--red' circleStyles='plus--top' title='A développer' isTop={true}
+            toggleModal={() => handleCircleClick("adevelopper")}/>
+            <Circle styles='circle--yellow' circleStyles='plus--bottom' title='Savoir Etre' isTop={false}
+            toggleModal={() => handleCircleClick("savoirEtre")}/>
+            <Circle styles='circle--green' circleStyles='plus--bottom' title='Langages et Frameworks' isTop={false} 
+          toggleModal={() => handleCircleClick("langagesetframeworks")}/>
         </div>
         <div className='wheels'>
         {isModalOpen && (
@@ -88,7 +148,15 @@ const toggleModal = () => {
               onSkillHover={handleSkillHover}
               onSkillLeave={handleSkillLeave}
               type={wheelData.type}
+              currentIndex={currentWheelIndex}
+              isWheelActive={isWheelActive}
             />
+              <button className='arrow--left' onClick = {() =>{handlePrevWheel(); handleToggleClick()}}>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg>
+              </button>
+              <button className='arrow--right' onClick = {() =>{handleNextWheel(); handleToggleClick()}}>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
+              </button>
           </Modal>
         )}
         </div>

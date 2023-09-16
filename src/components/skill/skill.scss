@@ -13,13 +13,16 @@
     align-items: center;
     width: 40px;
     height: 40px;
-    object-fit: cover;
     transform: rotate(calc(-360deg / var(--numberOfSkills) * var(--i)));
 }
 
 .wheel.active .skill {
     transform: rotate(calc(360deg / var(--numberOfSkills) * var(--i)));
-  }
+}
+
+.wheel.inactive .skill__image {
+    display: none;
+}
 
 .skill__title {
     display: none;

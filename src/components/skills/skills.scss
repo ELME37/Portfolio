@@ -67,4 +67,31 @@
     width: 80%;
 }
 
-    
+.arrow--left,
+.arrow--right {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        fill: white;
+        background-color: transparent;
+        border: none;
+        font-size: 50px;
+        z-index: 1;
+        opacity: 0.6;
+        cursor: pointer;
+        width: 48px;
+        height: 80px;
+
+        &:hover,
+        &:hover {
+          opacity: 1;
+        }
+    }
+
+.arrow--left {
+    left: -65px;
+}
+        
+.arrow--right {
+    right: -65px;
+}
