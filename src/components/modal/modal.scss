@@ -59,6 +59,7 @@
           .modal__presentation {
             color: white;
             font-size: 16px;
+            text-align: justify;
           }
 
           .modal__links {
@@ -71,7 +72,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 30%;
+                width: 50%;
                 text-align: center;
                 padding: 2%;
                 min-height: 70px;

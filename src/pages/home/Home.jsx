@@ -24,13 +24,13 @@ export default function Home () {
                     <ArrowDown/>
                 </div>
             </div>
-            <ArrowUp/>
             <Header/>
             <main className='main'>
                 <About/>
                 <Skills/>
                 <Projects/>
                 <Contact/>
+                <ArrowUp/>
             </main>
             <Footer/>
         </div>

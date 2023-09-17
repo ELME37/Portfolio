@@ -126,6 +126,7 @@ useEffect(() => {
             toggleModal={() => handleCircleClick("outils")}/>
             <Circle styles='circle--red' circleStyles='plus--top' title='A développer' isTop={true}
             toggleModal={() => handleCircleClick("adevelopper")}/>
+             <div id="target--projects"></div>
             <Circle styles='circle--yellow' circleStyles='plus--bottom' title='Savoir Etre' isTop={false}
             toggleModal={() => handleCircleClick("savoirEtre")}/>
             <Circle styles='circle--green' circleStyles='plus--bottom' title='Langages et Frameworks' isTop={false} 

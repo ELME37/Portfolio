@@ -201,10 +201,10 @@
         &.skill--wheel {
             position: absolute;
             left: -33px;
-            transform-origin: 125px;
+            transform-origin: 133px;
             transition: 0.5s;
             transition-delay: calc(0.1s * var(--i));
-            transform: rotate(0deg) translateX(180px);
+            transform: rotate(0deg) translateX(160px);
         }
     
         &.skill--project {
