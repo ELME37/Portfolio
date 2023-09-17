@@ -35,7 +35,7 @@ export default function About () {
                         } 
                     />
                 </div>
-                <Modal isOpen={isModalOpen} toggleModal={toggleModal}  styles='modal__about'
+                <Modal isOpen={isModalOpen} toggleModal={toggleModal}  styles='modal--about'
                     children={
                         <>
                             <p className='modal__presentation'>Fort de dix années d'expérience en tant que Gestionnaire des Ressources Humaines, j'ai évolué dans le monde dynamique de la gestion du personnel, développant des compétences précieuses en gestion du changement, en résolution de problèmes et en communication.</p>

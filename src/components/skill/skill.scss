@@ -1,51 +1,216 @@
-.skill--wheel {
-    position: absolute;
-    left: 0;
-    transform-origin: 200px;
-    transition: 0.5s;
-    transition-delay: calc(0.1s * var(--i));
-    transform: rotate(0deg) translateX(180px);
+.skill {
+
+    .skill__title {
+        display: none;
+        position: absolute;
+        transform: rotate(360deg);
+        transform: translateY(-100%);
+        color: white;
+    }
+
+    .skill__image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        transform: rotate(calc(-360deg / var(--numberOfSkills) * var(--i)));
+    }
+
+    &.skill--wheel {
+        position: absolute;
+        left: 0;
+        transform-origin: 200px;
+        transition: 0.5s;
+        transition-delay: calc(0.1s * var(--i));
+        transform: rotate(0deg) translateX(180px);
+    }
+
+    &.skill--project {
+        position: relative;
+        margin: 0 2%;
+    }
 }
 
-.skill__image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    transform: rotate(calc(-360deg / var(--numberOfSkills) * var(--i)));
+@media screen and (max-width: 1000px) {
+    .skill {
+
+        .skill__title {
+            display: none;
+            position: absolute;
+            transform: rotate(360deg);
+            transform: translateY(-100%);
+            color: white;
+        }
+    
+        .skill__image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            transform: rotate(calc(-360deg / var(--numberOfSkills) * var(--i)));
+        }
+    
+        &.skill--wheel {
+            position: absolute;
+            left: -10px;
+            transform-origin: 185px;
+            transition: 0.5s;
+            transition-delay: calc(0.1s * var(--i));
+            transform: rotate(0deg) translateX(180px);
+        }
+    
+        &.skill--project {
+            position: relative;
+            margin: 0 1%;
+        }
+    }
 }
 
-.wheel.active .skill {
-    transform: rotate(calc(360deg / var(--numberOfSkills) * var(--i)));
-}
+@media screen and (max-width: 800px) {
+    .skill {
 
-.wheel.inactive .skill__image {
-    display: none;
-}
-
-.skill__title {
-    display: none;
-    position: absolute;
-    transform: rotate(360deg);
-    transform: translateY(-100%);
-    color: white;
-}
-
-.skill.skill--project {
-    position: relative;
-    margin: 0 2%;
-}
-
-@media screen and (max-width: 900px) {
-    .skill.skill--project {
-        margin: 0 1%;
+        .skill__title {
+            display: none;
+            position: absolute;
+            transform: rotate(360deg);
+            transform: translateY(-100%);
+            color: white;
+        }
+    
+        .skill__image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            transform: rotate(calc(-360deg / var(--numberOfSkills) * var(--i)));
+        }
+    
+        &.skill--wheel {
+            position: absolute;
+            left: -15px;
+            transform-origin: 165px;
+            transition: 0.5s;
+            transition-delay: calc(0.1s * var(--i));
+            transform: rotate(0deg) translateX(180px);
+        }
+    
+        &.skill--project {
+            position: relative;
+            margin: 0 1%;
+        }
     }
 }
 
 @media screen and (max-width: 680px) {
-    .skill.skill--project {
-        margin: 0 2%;
-        margin-top: 6px;
+    .skill {
+
+        .skill__title {
+            display: none;
+            position: absolute;
+            transform: rotate(360deg);
+            transform: translateY(-100%);
+            color: white;
+        }
+    
+        .skill__image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            transform: rotate(calc(-360deg / var(--numberOfSkills) * var(--i)));
+        }
+    
+        &.skill--wheel {
+            position: absolute;
+            left: -15px;
+            transform-origin: 165px;
+            transition: 0.5s;
+            transition-delay: calc(0.1s * var(--i));
+            transform: rotate(0deg) translateX(180px);
+        }
+    
+        &.skill--project {
+            position: relative;
+            margin: 0 2%;
+            margin-top: 6px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .skill {
+
+        .skill__title {
+            display: none;
+            position: absolute;
+            transform: rotate(360deg);
+            transform: translateY(-100%);
+            color: white;
+        }
+    
+        .skill__image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            transform: rotate(calc(-360deg / var(--numberOfSkills) * var(--i)));
+        }
+    
+        &.skill--wheel {
+            position: absolute;
+            left: -20px;
+            transform-origin: 148px;
+            transition: 0.5s;
+            transition-delay: calc(0.1s * var(--i));
+            transform: rotate(0deg) translateX(180px);
+        }
+    
+        &.skill--project {
+            position: relative;
+            margin: 0 2%;
+            margin-top: 6px;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .skill {
+
+        .skill__title {
+            display: none;
+            position: absolute;
+            transform: rotate(360deg);
+            transform: translateY(-100%);
+            color: white;
+        }
+    
+        .skill__image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            transform: rotate(calc(-360deg / var(--numberOfSkills) * var(--i)));
+        }
+    
+        &.skill--wheel {
+            position: absolute;
+            left: -33px;
+            transform-origin: 125px;
+            transition: 0.5s;
+            transition-delay: calc(0.1s * var(--i));
+            transform: rotate(0deg) translateX(180px);
+        }
+    
+        &.skill--project {
+            position: relative;
+            margin: 0 2%;
+            margin-top: 6px;
+        }
     }
 }

@@ -2,7 +2,7 @@
 	  "savoirFaire": [
 		{
 		  "id": "0",
-		  "title": "Connaissance des pratiques SEO",
+		  "title": "Connaissance pratiques SEO",
 		  "image": "competences/savoirFaire/seo.png"
 		},
 		{
@@ -22,7 +22,7 @@
 		},
 		{
 		  "id": "4",
-		  "title": "Conception d'interfaces utilisateurs",
+		  "title": "Conception d'UI",
 		  "image": "competences/savoirFaire/conception design.png"
 		},
 		{

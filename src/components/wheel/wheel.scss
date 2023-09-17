@@ -2,66 +2,18 @@
   position: relative;
   width: 400px;
   height: 400px;
+  margin: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &.active .skill {
+    transform: rotate(calc(360deg / var(--numberOfSkills) * var(--i)));
   }
 
-  .wheel.savoirFaire::after {
-    content: '';
-    top: 0;
-    width: 260px;
-    height: 260px;
-    border: 20px rgb(22, 145, 221) solid;
-    background-color: rgba(214,194,120,255);
-    border-radius: 50%;
-    z-index: 99;
+  &.inactive .skill__image {
+    display: none;
   }
-
-  .wheel.outils::after {
-    content: '';
-    top: 0;
-    width: 260px;
-    height: 260px;
-    border: 20px black solid;
-    background-color: rgba(214,194,120,255);
-    border-radius: 50%;
-    z-index: 99;
-  }
-
-  .wheel.adevelopper::after {
-    content: '';
-    top: 0;
-    width: 260px;
-    height: 260px;
-    border: 20px red solid;
-    background-color: rgba(214,194,120,255);
-    border-radius: 50%;
-    z-index: 99;
-  }
-
-  .wheel.savoirEtre::after {
-    content: '';
-    top: 0;
-    width: 260px;
-    height: 260px;
-    border: 20px rgb(251, 227, 5) solid;
-    background-color: rgba(214,194,120,255);
-    border-radius: 50%;
-    z-index: 99;
-  }
-
-  .wheel.langagesetframeworks::after {
-    content: '';
-    top: 0;
-    width: 260px;
-    height: 260px;
-    border: 20px rgb(7, 164, 7) solid;
-    background-color: rgba(214,194,120,255);
-    border-radius: 50%;
-    z-index: 99;
-  }
-
 
   .wheel__title {
     position: absolute;
@@ -70,3 +22,227 @@
     color: white;
     text-align: center;
   }
+
+  &::after {
+    content: '';
+    top: 0;
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    z-index: 99;
+  }
+
+  &.savoirFaire::after {
+    border: 20px rgb(22, 145, 221) solid;
+    background-color: rgba(214,194,120,255);
+  }
+
+  &.outils::after {
+    border: 20px black solid;
+    background-color: rgba(214,194,120,255);
+  }
+
+  &.adevelopper::after {
+    border: 20px red solid;
+    background-color: rgba(214,194,120,255);
+  }
+
+  &.savoirEtre::after {
+    border: 20px rgb(251, 227, 5) solid;
+    background-color: rgba(214,194,120,255);
+  }
+
+  &.langagesetframeworks::after {
+    border: 20px rgb(7, 164, 7) solid;
+    background-color: rgba(214,194,120,255);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .wheel {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    &.active .skill {
+      transform: rotate(calc(360deg / var(--numberOfSkills) * var(--i)));
+    }
+  
+    &.inactive .skill__image {
+      display: none;
+    }
+  
+    .wheel__title {
+      position: absolute;
+      height: 30px;
+      z-index: 100;
+      color: white;
+      text-align: center;
+    }
+  
+    &::after {
+      content: '';
+      top: 0;
+      width: 230px;
+      height: 230px;
+      border-radius: 50%;
+      z-index: 99;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .wheel {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    &.active .skill {
+      transform: rotate(calc(360deg / var(--numberOfSkills) * var(--i)));
+    }
+  
+    &.inactive .skill__image {
+      display: none;
+    }
+  
+    .wheel__title {
+      position: absolute;
+      height: 30px;
+      z-index: 100;
+      color: white;
+      text-align: center;
+    }
+  
+    &::after {
+      content: '';
+      top: 0;
+      width: 195px;
+      height: 195px;
+      border-radius: 50%;
+      z-index: 99;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wheel {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    &.active .skill {
+      transform: rotate(calc(360deg / var(--numberOfSkills) * var(--i)));
+    }
+  
+    &.inactive .skill__image {
+      display: none;
+    }
+  
+    .wheel__title {
+      position: absolute;
+      height: 30px;
+      z-index: 100;
+      color: white;
+      text-align: center;
+    }
+  
+    &::after {
+      content: '';
+      top: 0;
+      width: 195px;
+      height: 195px;
+      border-radius: 50%;
+      z-index: 99;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .wheel {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    &.active .skill {
+      transform: rotate(calc(360deg / var(--numberOfSkills) * var(--i)));
+    }
+  
+    &.inactive .skill__image {
+      display: none;
+    }
+  
+    .wheel__title {
+      position: absolute;
+      height: 30px;
+      z-index: 100;
+      color: white;
+      text-align: center;
+    }
+  
+    &::after {
+      content: '';
+      top: 0;
+      width: 163px;
+      height: 163px;
+      border-radius: 50%;
+      z-index: 99;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .wheel {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    &.active .skill {
+      transform: rotate(calc(360deg / var(--numberOfSkills) * var(--i)));
+    }
+  
+    &.inactive .skill__image {
+      display: none;
+    }
+  
+    .wheel__title {
+      position: absolute;
+      height: 30px;
+      z-index: 100;
+      color: white;
+      text-align: center;
+      font-size: 14px;
+    }
+  
+    &::after {
+      content: '';
+      top: 0;
+      width: 117px;
+      height: 117px;
+      border-radius: 50%;
+      z-index: 99;
+    }
+  }
+}
+
+  
+
+ 
+
+
+  
