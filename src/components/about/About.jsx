@@ -5,6 +5,7 @@ import ROUTES from '../../router/Routes';
 import Layout from '../../components/layout/Layout';
 import Rectangle from '../../components/rectangle/Rectangle';
 import Modal from '../../components/modal/Modal';
+import photo from './Businessman.png'
 
 export default function About () {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -34,6 +35,9 @@ export default function About () {
                             </>
                         } 
                     />
+                    <div className='about__photo'>
+                        <img src={photo} alt="Mickael TURQUAIS" />
+                    </div>
                 </div>
                 <Modal isOpen={isModalOpen} toggleModal={toggleModal}  styles='modal--about'
                     children={
