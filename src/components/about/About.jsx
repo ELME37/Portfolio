@@ -25,7 +25,7 @@ export default function About () {
                                 <hr/>
                                 <p className='presentation'>Je suis axé sur des valeurs clés telles que la qualité, l'écoute, la créativité et la satisfaction du client.</p>
                                 <hr/>
-                                <p className='presentation'>Ensemble collaborons pour transformer votre vision en une réalité numérique captivante et inovante.</p>
+                                <p className='presentation'>Ensemble collaborons pour transformer votre vision en une réalité numérique captivante et innovante.</p>
                                 <button className='btn__modal' onClick={toggleModal}><svg className='plusInfos' xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
                                     <title>En savoir +</title>
                                     <desc>En savoir + Logo</desc>

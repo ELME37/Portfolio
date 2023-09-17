@@ -212,7 +212,7 @@
             .header__navigation {
                 .navigation__list{
                     .navigation__list--item {
-                        width: 60px;
+                        width: 65px;
     
                         .navigation__item--link {
                             .header__title  {
@@ -238,6 +238,27 @@
                         .navigation__item--link {
                             .header__title  {
                                 font-size: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .header {    
+        .header__header {
+    
+            .header__navigation {
+                .navigation__list{
+                    .navigation__list--item {
+                        width: 55px;
+    
+                        .navigation__item--link {
+                            .header__title  {
+                                font-size: 8px;
                             }
                         }
                     }
