@@ -112,7 +112,7 @@
         ],
         "description" : [
                 "La société Mon vieux grimoire a fait le souhait de lancer son nouveau projet, une application de référencement et de notations de livres. Pour cette mission, j'ai joué le rôle de développeur Backend en initialisant et configurant un serveur avec Node JS et une base de données avec MongoDB et en mettant en place l'application avec Express.",
-                "Il s'agit de ma première mission en tant que développeur Backend, la difficulté était de comprendre comment ces différentes technologies interagissent. Après cette apprentissage, j'ai pu visualiser la haute performance que pouvez apporter cette stack JavaScript complète qui garantit un écosystème riche, sécurisé et flexible."
+                "Il s'agit de ma première mission en tant que développeur Backend, la difficulté était de comprendre comment ces différentes technologies interagissent. Après cet apprentissage, j'ai pu visualiser la haute performance que pouvez apporter cette stack JavaScript complète qui garantit un écosystème riche, sécurisé et flexible."
         ],
         "features": [
                 "Mise en place d'un server avec Node JS",

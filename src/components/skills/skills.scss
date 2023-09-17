@@ -45,6 +45,7 @@
         align-items: center;
         text-align: center;
         color: white;
+        margin-bottom: 100px;
 
         .citation__texte {
             margin: 0 20px;
@@ -56,10 +57,71 @@
     }
 }
 
+@media screen and (max-width: 950px) {
+    .skills {
+        width: 100%;
+        min-height: 0;
+        background-color: rgb(1, 54, 86);
+        display: flex;
+        flex-direction: column;
+    
+        .skills__info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(1, 54, 86);
+            color: white;
+            height: 30px;
+            font-weight: bold;
+            white-space: nowrap;
+            margin-top: 140px;
+            font-size: 20px;
+    
+            .skills__title {
+                font-size: 20px;
+            }
+        }
+    
+        .skills__jo {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 50px 0;
+    
+            & img {
+                width: 80%;
+            }
+        }
+    
+        .skills__wheels {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .skills__citation {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            margin-bottom: 100px;
+    
+            .citation__texte {
+                margin: 0 20px;
+            }
+    
+            .citation__svg {
+                fill: gold;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 900px) {
     .skills {
         width: 100%;
-        min-height: 100vh;
+        min-height: 0;
         background-color: rgb(1, 54, 86);
         display: flex;
         flex-direction: column;
@@ -121,7 +183,7 @@
 @media screen and (max-width: 780px) {
     .skills {
         width: 100%;
-        min-height: 100vh;
+        min-height: 10;
         background-color: rgb(1, 54, 86);
         display: flex;
         flex-direction: column;
@@ -184,7 +246,7 @@
 @media screen and (max-width: 600px) {
     .skills {
         width: 100%;
-        min-height: 100vh;
+        min-height: 0;
         background-color: rgb(1, 54, 86);
         display: flex;
         flex-direction: column;

@@ -53,6 +53,17 @@
     }
 }
 
+@media screen and (max-width: 950px) {
+    .projects {
+        min-height: 0;
+        .gallery{
+            justify-content: space-between;
+            gap: 30px 4%;  
+            padding: 30px;
+        }
+    }
+}
+
 @media screen and (max-width: 780px) {
     .projects {
         .gallery{
