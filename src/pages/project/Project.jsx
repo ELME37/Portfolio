@@ -13,19 +13,20 @@ export default function Project () {
   const [isLoading, setIsLoading] = useState(true);
   const [isError, setIsError] = useState(false);
 
+  const [currentProjectIndex, setCurrentProjectIndex] = useState(0);
+  const [projects, setProjects] = useState([]);
+
   useEffect(() => {
     fetch('/projects.json')
       .then((response) => response.json())
       .then((data) => {
-
+        setProjects(data);
         const selectedProject = data.find((project) => project.id === id);
-   
-          if (!selectedProject) {
-            setIsError(true);
-          } else {
-            setProject(selectedProject);
-            }
-
+        if (!selectedProject) {
+          setIsError(true);
+        } else {
+          setProject(selectedProject);
+        }
         setIsLoading(false);
       })
       .catch(error => {
@@ -33,7 +34,24 @@ export default function Project () {
         setIsError(true);
         setIsLoading(false);
       });
-  }, [ id ]);
+  }, [id]);
+
+
+  const handleNextProject = () => {
+    setCurrentProjectIndex((prevIndex) =>
+      prevIndex === projects.length - 1 ? 0 : prevIndex + 1
+    );
+  
+    setProject(projects[currentProjectIndex]);
+  };
+  
+  const handlePrevProject = () => {
+    setCurrentProjectIndex((prevIndex) =>
+      prevIndex === 0 ? projects.length - 1 : prevIndex - 1
+    );
+  
+    setProject(projects[currentProjectIndex]);
+  };
 
   if (isLoading) {
     return <p>Chargement en cours</p>;
@@ -83,6 +101,14 @@ export default function Project () {
                             </ul>
                         </div>
                     </div>
+                </div>
+                <div className='project__buttons'>
+                    <button className='project--btn' onClick = {handlePrevProject}>
+                        Projet précédent
+                    </button>
+                    <button className='project--btn' onClick = {handleNextProject}>
+                        Projet suivant
+                    </button>
                 </div>
            </Layout>
         </div>
