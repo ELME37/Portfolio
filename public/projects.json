@@ -76,7 +76,7 @@
         "title": "Librairie Mon vieux grimoire",
         "job": " Développeur Backend - Node Js / Express Js / MongoDB",
         "image": "../assets/images/Mon_vieux_grimoire.png",
-        "sills": [	
+        "skills": [	
             {
                 "title": "Node JS",
                 "image": "../competences/langages et frameworks/NODE JS.png"
@@ -139,7 +139,7 @@
             "title": "Application RH - BTP",
             "job": "En cours de construction",
             "image": "../assets/images/Site_en_cours.png",
-            "sills": [],
+            "skills": [],
             "description" : [],
             "features": [],
             "video": "",
