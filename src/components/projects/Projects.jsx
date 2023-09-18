@@ -15,6 +15,7 @@ export default function Projects() {
 
   return (
     <div className="projects" id="projects">
+      <div id="target--projects"></div>
       <Layout>
         <div className="projects__info">
           <h2 className="projects__title">

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import './project.scss';
+import ROUTES from '../../router/Routes';
 import Error404 from '../error404/Error404';
 import Computer from '../../components/computer/Computer';
 import Layout from '../../components/layout/Layout';
@@ -89,7 +90,7 @@ export default function Project () {
                         </div>
                     </div>
                 </div>
-                <HashLink className="backToProjects" to="/#projects">Retourner vers les projets</HashLink>
+                <HashLink className="backToProjects" to={ROUTES.projects}>Retourner vers les projets</HashLink>
            </Layout>
         </div>
     );
