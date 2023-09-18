@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate} from 'react-router-dom';
 import './project.scss';
 import Error404 from '../error404/Error404';
 import Computer from '../../components/computer/Computer';
@@ -15,6 +15,7 @@ export default function Project () {
 
   const [currentProjectIndex, setCurrentProjectIndex] = useState(0);
   const [projects, setProjects] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetch('/projects.json')
@@ -38,19 +39,19 @@ export default function Project () {
 
 
   const handleNextProject = () => {
-    setCurrentProjectIndex((prevIndex) =>
-      prevIndex === projects.length - 1 ? 0 : prevIndex + 1
-    );
+    const nextIndex = (currentProjectIndex + 1) % projects.length;
+    setCurrentProjectIndex(nextIndex);
   
-    setProject(projects[currentProjectIndex]);
+    const nextProjectId = projects[nextIndex].id;
+    navigate(`/projects/${nextProjectId}`);
   };
   
   const handlePrevProject = () => {
-    setCurrentProjectIndex((prevIndex) =>
-      prevIndex === 0 ? projects.length - 1 : prevIndex - 1
-    );
+    const prevIndex = (currentProjectIndex - 1 + projects.length) % projects.length;
+    setCurrentProjectIndex(prevIndex);
   
-    setProject(projects[currentProjectIndex]);
+    const prevProjectId = projects[prevIndex].id;
+    navigate(`/projects/${prevProjectId}`);
   };
 
   if (isLoading) {
