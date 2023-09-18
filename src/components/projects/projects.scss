@@ -15,25 +15,25 @@
             color: rgb(1, 54, 86);
             padding: 20px;
             &::before {
-              content: '';
-              position: absolute;
-              top: 0;
-              left: 0;
-              width: 20px;
-              height: 20px;
-              border-top: 5px rgb(65, 200, 254) solid;
-              border-left: 5px rgb(65, 200, 254) solid;
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 20px;
+                height: 20px;
+                border-left: 5px rgb(65, 200, 254) solid;
+                border-bottom: 5px rgb(65, 200, 254) solid;
             }
 
             &::after {
                 content: '';
                 position: absolute;
-                bottom: 0;
+                top: 0;
                 right: 0;
                 width: 20px;
                 height: 20px;
+                border-top: 5px rgb(247, 65, 65) solid;
                 border-right: 5px rgb(247, 65, 65) solid;
-                border-bottom: 5px rgb(247, 65, 65) solid;
             }
         }
     }
