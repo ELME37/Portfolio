@@ -10,7 +10,7 @@ import './card.scss';
 export default function Card ({ id, title, image, job }) {
     // Eléments retourner par le composant
     return (
-        <Link to={ROUTES.project(id)} key={id} className="card__link">
+        <Link to={ROUTES.project(id)} key={id} className="card__link" target="_blank" rel="noopener noreferrer">
                 <h3 className='card__title'>{title}<br/><br/>{job}</h3>
                 <div className='card__image'>
                     <img src={image} alt={title} />
