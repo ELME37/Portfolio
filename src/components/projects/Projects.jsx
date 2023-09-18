@@ -15,7 +15,6 @@ export default function Projects() {
 
   return (
     <div className="projects" id="projects">
-      <div id="target--projects"></div>
       <Layout>
         <div className="projects__info">
           <h2 className="projects__title">
@@ -28,11 +27,11 @@ export default function Projects() {
                 <Card key={project.id} id={project.id} image={project.image} title={project.title} job={project.job} />
             ))}
         </div>
-        <div id='target--contact'></div>
         <div className='projects__citation'>
             <p>Ensemble, faisons que votre idée devienne un projet concret !</p>
         </div>
       </Layout>
+      <div id='target--contact'></div>
     </div>
   );
 }

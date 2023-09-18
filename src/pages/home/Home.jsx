@@ -15,14 +15,13 @@ export default function Home () {
     return (
         <div className='home'>
             <div className="container__home">
-             
                 <div className="home__content">
                     <Logo styles='home'/>
-                    <div id="target--about"></div>
                     <h1 className='name'>Mickaël TURQUAIS</h1>
                     <p className='job'>Développeur Web</p>
                     <ArrowDown/>
                 </div>
+                <div id="target--about"></div>
             </div>
             <Header/>
             <main className='main'>
