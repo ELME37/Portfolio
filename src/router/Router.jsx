@@ -1,5 +1,5 @@
 // Import des librairies React
-import React from 'react';
+import React, { useEffect } from 'react';
 import {Routes, Route } from 'react-router-dom';
 // Import des composants
 import Home from '../pages/home/Home';
@@ -14,6 +14,22 @@ import ROUTES from './Routes';
 
 // Définition du composant sous forme de fonction
 export default function Router () {
+    useEffect(() => {
+        function scrollOnSafariRefresh() {
+          // Detect Safari browser
+          const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+    
+          // Detect if there's a hash in the URL
+          if (isSafari && window.location.hash) {
+            const targetElement = document.querySelector(window.location.hash);
+            if (targetElement) {
+              targetElement.scrollIntoView({ behavior: 'smooth' });
+            }
+          }
+        }
+    
+        scrollOnSafariRefresh();
+      }, []);
     // Eléments retourner par le composant
     return (
         <Routes>

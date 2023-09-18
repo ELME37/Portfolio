@@ -63,7 +63,7 @@ export default function Project () {
                     </div>
                     <div className='project__skills'>
                         <div className='project__skill'>
-                            {project.sills.map((skill, index) => (
+                            {project.skills.map((skill, index) => (
                                 <Skill
                                     key={index}
                                     title={skill.title}

@@ -4,7 +4,7 @@
         "title": "Agence Kasa",
         "job": "Développeur Frontend - React Js",
         "image": "../assets/images/Kasa.png",
-        "sills": [	
+        "skills": [	
             {
                 "title": "Javascript",
 		        "image": "../competences/langages et frameworks/JS.png"
