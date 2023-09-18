@@ -6,14 +6,39 @@
     flex-direction: column;
     background-color: white;
 
-    .about__title {
+    .about__infos {
         display: flex;
         justify-content: center;
         align-items: center;
-        color: rgb(1, 54, 86);
-        font-size: 24px;
-        margin-top: 140px;
-        margin-bottom: 50px;
+        .about__title {
+            color: rgb(1, 54, 86);
+            font-size: 24px;
+            margin-top: 140px;
+            margin-bottom: 50px;
+            padding: 20px;
+    
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 20px;
+                height: 20px;
+                border-top: 5px rgb(65, 200, 254) solid;
+                border-left: 5px rgb(65, 200, 254) solid;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 20px;
+                height: 20px;
+                border-right: 5px rgb(247, 65, 65) solid;
+                border-bottom: 5px rgb(247, 65, 65) solid;
+            }
+        }
     }
 
     .about__description {

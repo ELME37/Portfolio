@@ -17,10 +17,7 @@ export default function Projects() {
     <div className="projects" id="projects">
       <Layout>
         <div className="projects__info">
-          <h2 className="projects__title">
-            <span className="skills__hook blue">&lt;</span> Projets{' '}
-            <span className="skills__hook red">/&gt;</span>
-          </h2>
+          <h2 className="projects__title">Projets</h2>
         </div>
         <div className="gallery">
             {projectsData.map(project => (

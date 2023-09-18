@@ -116,7 +116,7 @@ useEffect(() => {
     <div className='skills' id='skills'>
       <Layout>
         <div className='skills__info'>
-            <h2 className='skills__title'><span className='skills__hook blue'>&lt;</span> Compétences <span className='skills__hook red'>/&gt;</span></h2>
+            <h2 className='skills__title'>Compétences</h2>
         </div>
         <div className='skills__jo'>
           <img src={jo} alt="anneaux jo" />
@@ -136,9 +136,9 @@ useEffect(() => {
           <Modal isOpen={isModalOpen} toggleModal={toggleModal} styles='modal--skills'>
             <div className='modal__infos'>
               {isHovered ? (
-                  <p> <span className='skills__hook blue'>&lt;</span> {hoveredSkillTitle} <span className='skills__hook red'>/&gt;</span></p>
+                  <p className='modal__infos--skills'>{hoveredSkillTitle}</p>
               ) : (
-                  <h3 className='modal__title'><span className='skills__hook blue'>&lt;</span> {wheelData.title} <span className='skills__hook red'>/&gt;</span></h3>
+                  <h3 className='modal__title'>{wheelData.title}</h3>
               )}
             </div>
             <Wheel

@@ -17,7 +17,9 @@ export default function About () {
     return (
         <div className='about' id='about'>
             <Layout>
-                <h2 className='about__title'><span className='skills__hook blue'>&lt;</span> A propos <span className='skills__hook red'>/&gt;</span></h2>
+                <div className='about__infos'>
+                    <h2 className='about__title'>A propos</h2>
+                </div>
                 <div className='about__description'>
                     <Rectangle styles='description' 
                         children={

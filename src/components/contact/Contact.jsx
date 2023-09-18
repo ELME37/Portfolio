@@ -8,7 +8,7 @@ export default function Contact () {
         <div className='contact' id='contact'>
             <Layout>
                 <div className='contact__info'>
-                    <h2 className='contact__title'><span className='skills__hook blue'>&lt;</span> Contact <span className='skills__hook red'>/&gt;</span></h2>
+                    <h2 className='contact__title'>Contact</h2>
                     <p className='contact__citation'>"Prêt pour une collaboration créative ? Contactez-moi !"</p>
                 </div>
                 <FormContact/>

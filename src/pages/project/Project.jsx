@@ -47,10 +47,7 @@ export default function Project () {
             <Layout>
                 <Computer video={project.video}/>
                 <div className='project__infos'>
-                    <h1 className='project__title'>
-                        <span className="skills__hook blue">&lt;</span> {project.title}{' '}
-                        <span className="skills__hook red">/&gt;</span>
-                    </h1>
+                    <h1 className='project__title'>{project.title}</h1>
                     <div className='projects__data--pro'>
                         <h2 className='project__job'>{project.job}</h2>
                         <a className='project__link--github' href={project.link.github} target="_blank" rel="noopener noreferrer" title='Github'>

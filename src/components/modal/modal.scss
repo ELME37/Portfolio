@@ -135,6 +135,56 @@
             font-weight: bold;
             white-space: nowrap;
             font-size: 18px;
+
+            .modal__title {
+              padding: 20px;
+              &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 20px;
+                height: 20px;
+                border-top: 5px rgb(65, 200, 254) solid;
+                border-left: 5px rgb(65, 200, 254) solid;
+              }
+
+              &::after {
+                  content: '';
+                  position: absolute;
+                  bottom: 0;
+                  right: 0;
+                  width: 20px;
+                  height: 20px;
+                  border-right: 5px rgb(247, 65, 65) solid;
+                  border-bottom: 5px rgb(247, 65, 65) solid;
+              }
+            }
+
+            .modal__infos--skills {
+              padding: 20px;
+              &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 20px;
+                height: 20px;
+                border-left: 5px rgb(65, 200, 254) solid;
+                border-bottom: 5px rgb(65, 200, 254) solid;
+              }
+
+              &::after {
+                  content: '';
+                  position: absolute;
+                  top: 0;
+                  right: 0;
+                  width: 20px;
+                  height: 20px;
+                  border-top: 5px rgb(247, 65, 65) solid;
+                  border-right: 5px rgb(247, 65, 65) solid;
+              }
+            }
           }
 
           .modal__button--skills {
