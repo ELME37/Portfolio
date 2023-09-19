@@ -19,7 +19,7 @@
     .logo {
         &.home {
             img {
-                width: 340px; //
+                width: 340px;
             }
         }
     
@@ -31,21 +31,11 @@
     }
 }
 
-@media screen and (max-width: 580px) {
-    .logo {
-        &.home {
-            img {
-                width: 340px; //
-            }
-        }
-    }
-}
-
 @media screen and (max-width: 450px) {
     .logo {
         &.home {
             img {
-                width: 300px; //
+                width: 300px;
             }
         }
 
@@ -61,13 +51,7 @@
     .logo {
         &.home {
             img {
-                width: 260px; //
-            }
-        }
-
-        &.logo--header {
-            img {
-                width: 50px;
+                width: 260px;
             }
         }
     }

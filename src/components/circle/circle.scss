@@ -59,152 +59,23 @@
 
 @media screen and (max-width: 1000px) {
     .circle {
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        width: 23%;
-        border-radius: 50%;
-        overflow: hidden;
-        background-color: transparent;
-        cursor: pointer;
-    
-        &::after {
-            content: "";
-            display: block;
-            padding-bottom: 100%;
-        }
-    
         .circle__title {
-            position: absolute;
-            text-align: center;
-            font-weight: bold;
             font-size: 14px;
-            color: white;
         }
-        
-        .title--top {
-            top: 30%;
-        }
-        
-        .title--bottom {
-            top: 50%;
-        }
-    }
-    
-    .circle--blue {
-        top: 6.8%;
-        left: 12.6%;
-    }
-    
-    .circle--black {
-        top: 6.8%;
-        left: 38.5%;
-    }
-    
-    .circle--red {
-        top: 6.8%;
-        left: 64.4%;
-    }
-    
-    .circle--yellow {
-        top: 34%;
-        left: 25.6%;
-    }
-    
-    .circle--green {
-        top: 34%;
-        left: 51.5%;
     }
 }
 
 @media screen and (max-width: 900px) {
     .circle {
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        width: 23%;
-        border-radius: 50%;
-        overflow: hidden;
-        background-color: transparent;
-        cursor: pointer;
-    
-        &::after {
-            content: "";
-            display: block;
-            padding-bottom: 100%;
-        }
-    
-        .circle__title {
-            position: absolute;
-            text-align: center;
-            font-weight: bold;
-            font-size: 14px;
-            color: white;
-        }
-        
-        .title--top {
-            top: 30%;
-        }
-        
         .title--bottom {
             top: 48%;
         }
-    }
-    
-    .circle--blue {
-        top: 6.8%;
-        left: 12.6%;
-    }
-    
-    .circle--black {
-        top: 6.8%;
-        left: 38.5%;
-    }
-    
-    .circle--red {
-        top: 6.8%;
-        left: 64.4%;
-    }
-    
-    .circle--yellow {
-        top: 34%;
-        left: 25.6%;
-    }
-    
-    .circle--green {
-        top: 34%;
-        left: 51.5%;
     }
 }
 
 @media screen and (max-width: 780px) {
     .circle {
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        width: 26%; //
-        border-radius: 50%;
-        overflow: hidden;
-        background-color: transparent;
-        cursor: pointer;
-    
-        &::after {
-            content: "";
-            display: block;
-            padding-bottom: 100%;
-        }
-    
-        .circle__title {
-            position: absolute;
-            text-align: center;
-            font-size: 14px;
-            font-weight: bold;
-            color: white;
-        }
-        
-        .title--top {
-            top: 30%;
-        }
+        width: 26%;
         
         .title--bottom {
             top: 45%;
@@ -212,115 +83,50 @@
     }
     
     .circle--blue {
-        top: 6.8%; 
-        left: 7.6%; //
+        left: 7.6%;
     }
     
     .circle--black {
-        top: 6.8%;
-        left: 36.8%; //
+        left: 36.8%;
     }
     
     .circle--red {
-        top: 6.8%;
-        left: 65.8%; //
+        left: 65.8%;
     }
     
     .circle--yellow {
-        top: 34%;
-        left: 22%; //
-    }
-    
-    .circle--green {
-        top: 34%;
-        left: 51.5%; //
+        left: 22%;
     }
 }
 
 @media screen and (max-width: 600px) {
     .circle {
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        width: 29%; //
-        border-radius: 50%;
-        overflow: hidden;
-        background-color: transparent;
-        cursor: pointer;
-    
-        &::after {
-            content: "";
-            display: block;
-            padding-bottom: 100%;
-        }
+        width: 29%;
     
         .circle__title {
-            position: absolute;
-            text-align: center;
             font-size: 12px;
-            font-weight: bold;
-            color: white;
-        }
-        
-        .title--top {
-            top: 30%;
-        }
-        
-        .title--bottom {
-            top: 45%;
         }
     }
     
     .circle--blue {
-        top: 6.8%; 
-        left: 2.8%; //
+        left: 2.8%;
     }
     
     .circle--black {
-        top: 6.8%;
-        left: 35%; //
+        left: 35%;
     }
     
     .circle--red {
-        top: 6.8%;
-        left: 67.5%; //
+        left: 67.5%;
     }
     
     .circle--yellow {
-        top: 34%;
-        left: 19%; //
-    }
-    
-    .circle--green {
-        top: 34%;
-        left: 51.5%; //
+        left: 19%;
     }
 }
 
 @media screen and (max-width: 500px) {
     .circle {
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        width: 29%; //
-        border-radius: 50%;
-        overflow: hidden;
-        background-color: transparent;
-        cursor: pointer;
-    
-        &::after {
-            content: "";
-            display: block;
-            padding-bottom: 100%;
-        }
-    
-        .circle__title {
-            position: absolute;
-            text-align: center;
-            font-size: 12px;
-            font-weight: normal;
-            color: white;
-        }
         
         .title--top {
             top: 25%;
@@ -329,150 +135,21 @@
         .title--bottom {
             top: 40%;
         }
-    }
-    
-    .circle--blue {
-        top: 6.8%; 
-        left: 2.8%; //
-    }
-    
-    .circle--black {
-        top: 6.8%;
-        left: 35%; //
-    }
-    
-    .circle--red {
-        top: 6.8%;
-        left: 67.5%; //
-    }
-    
-    .circle--yellow {
-        top: 34%;
-        left: 19%; //
-    }
-    
-    .circle--green {
-        top: 34%;
-        left: 51.5%; //
     }
 }
 
 @media screen and (max-width: 450px) {
     .circle {
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        width: 29%; //
-        border-radius: 50%;
-        overflow: hidden;
-        background-color: transparent;
-        cursor: pointer;
-    
-        &::after {
-            content: "";
-            display: block;
-            padding-bottom: 100%;
-        }
-    
         .circle__title {
-            position: absolute;
-            text-align: center;
             font-size: 10px;
-            font-weight: normal;
-            color: white;
         }
-        
-        .title--top {
-            top: 25%;
-        }
-        
-        .title--bottom {
-            top: 40%;
-        }
-    }
-    
-    .circle--blue {
-        top: 6.8%; 
-        left: 2.8%; //
-    }
-    
-    .circle--black {
-        top: 6.8%;
-        left: 35%; //
-    }
-    
-    .circle--red {
-        top: 6.8%;
-        left: 67.5%; //
-    }
-    
-    .circle--yellow {
-        top: 34%;
-        left: 19%; //
-    }
-    
-    .circle--green {
-        top: 34%;
-        left: 51.5%; //
     }
 }
 
 @media screen and (max-width: 350px) {
     .circle {
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        width: 29%; //
-        border-radius: 50%;
-        overflow: hidden;
-        background-color: transparent;
-        cursor: pointer;
-    
-        &::after {
-            content: "";
-            display: block;
-            padding-bottom: 100%;
-        }
-    
         .circle__title {
-            position: absolute;
-            text-align: center;
             font-size: 8px;
-            font-weight: normal;
-            color: white;
         }
-        
-        .title--top {
-            top: 25%;
-        }
-        
-        .title--bottom {
-            top: 40%;
-        }
-    }
-    
-    .circle--blue {
-        top: 6.8%; 
-        left: 2.8%; //
-    }
-    
-    .circle--black {
-        top: 6.8%;
-        left: 35%; //
-    }
-    
-    .circle--red {
-        top: 6.8%;
-        left: 67.5%; //
-    }
-    
-    .circle--yellow {
-        top: 34%;
-        left: 19%; //
-    }
-    
-    .circle--green {
-        top: 34%;
-        left: 51.5%; //
     }
 }

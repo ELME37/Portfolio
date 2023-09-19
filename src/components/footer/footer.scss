@@ -5,38 +5,48 @@
     align-items: center;
     height: 120px;
     background-color: white;
+
+    .footer__logo {
+        display: flex;
+        font-size: 28px;
+        margin-top: 20px;
+        cursor: pointer;
+
+        & a {
+            margin-right: 30px;
+        }
+
+        & svg:hover {
+            scale: 1.2;
+        }
+
+        .logo__linkedin:hover {
+            fill : rgb(0, 119, 181);
+        }
+        
+        .logo__mail:hover {
+            fill : rgb(65, 200, 254);
+        }
+        
+        .logo__malt:hover {
+            fill : #FF5A5F;
+        }
+    }
+
+    .mentionslegales{
+        color: black;
+        text-align: center;
+    }
 }
 
-.footer__logo {
-    display: flex;
-    font-size: 28px;
-    margin-top: 20px;
-    cursor: pointer;
-}
-
-.footer__logo a {
-    margin-right: 30px;
-}
 
 
-.footer__logo svg:hover {
-    scale: 1.2;
-}
 
-.logo__linkedin:hover {
-    fill : rgb(0, 119, 181);
-}
 
-.logo__mail:hover {
-    fill : rgb(65, 200, 254);
-}
 
-.logo__malt:hover {
-    fill : #FF5A5F;
-}
 
-.mentionslegales{
-    color: black;
-    text-align: center;
-}
+
+
+
+
 
