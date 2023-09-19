@@ -14,9 +14,10 @@
     cursor: pointer;
 }
 
-.footer__logo svg {
-    margin-left: 30px;
+.footer__logo a {
+    margin-right: 30px;
 }
+
 
 .footer__logo svg:hover {
     scale: 1.2;

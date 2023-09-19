@@ -20,11 +20,12 @@ export default function About () {
                 <div className='about__infos'>
                     <h2 className='about__title'>A propos</h2>
                 </div>
+
                 <div className='about__description'>
                     <Rectangle styles='description' 
                         children={
                             <>
-                                <p className='presentation'>Je suis Mickaël TURQUAIS, <strong>Développeur Web - Mobile</strong> spécialisé dans les technologies <strong>Javascript</strong> basé en <strong>Indre et Loire</strong>.</p>
+                                <p className='presentation'>Je suis Mickaël TURQUAIS, <strong>Développeur Web - Mobile</strong> spécialisé dans les technologies <strong>Javascript - stack MERN</strong> basé en <strong>Indre et Loire</strong>.</p>
                                 <hr/>
                                 <p className='presentation'>Je suis axé sur des valeurs clés telles que la qualité, l'écoute, la créativité et la satisfaction du client.</p>
                                 <hr/>

@@ -5,6 +5,7 @@ import Wheel from '../../components/wheel/Wheel';
 import Layout from '../../components/layout/Layout';
 import Modal from '../modal/Modal';
 import Circle from '../circle/circle';
+import mern from './MERN-logo.png'
 
 export default function Skills() {
 
@@ -117,6 +118,12 @@ useEffect(() => {
       <Layout>
         <div className='skills__info'>
             <h2 className='skills__title'>Compétences</h2>
+        </div>
+        <div className='mern'>
+            <img className='mern__image' src={mern} alt="stack MERN" />
+            <p className='mern__definition'>
+               "La stack MERN (MongoDB, Express.js, React.js, Node.js) vous offre l'avantage d'une solution complète pour le développement d'applications web modernes, combinant une base de données flexible, un serveur robuste, et une interface utilisateur réactive pour une expérience de développement efficace et évolutive."
+            </p>
         </div>
         <div className='skills__jo'>
           <img src={jo} alt="anneaux jo" />

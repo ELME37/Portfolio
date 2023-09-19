@@ -45,12 +45,32 @@
         }
     }
 
+    .mern {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 50px;
+        padding: 0 20px;
+
+        .mern__image {
+            width: 20%;
+        }
+
+        .mern__definition {
+            color: white;
+            text-align: justify;
+            margin-left: 40px;
+            font-style: italic;
+        }
+    }
+
     .skills__jo {
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 50px 0;
+        margin: 80px 0;
 
         & img {
             width: 80%;
@@ -110,7 +130,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin: 50px 0;
+            margin: 80px 0;
     
             & img {
                 width: 80%;
@@ -165,13 +185,27 @@
                 font-size: 24px;
             }
         }
+
+        .mern {
+            flex-direction: column;
+            margin-top: 80px;
+            
+            .mern__image {
+
+            }
+
+            .mern__definition {
+                margin-left: 0;
+                text-align: center;
+            }
+        }
     
         .skills__jo {
             position: relative;
             display: flex;
             justify-content: center;
             align-items: center;
-            margin: 50px 0;
+            margin: 80px 0;
     
             & img {
                 width: 80%;
@@ -227,13 +261,26 @@
                 font-size: 24px;
             }
         }
+
+        .mern {
+            flex-direction: column;
+            margin-top: 80px;
+            
+            .mern__image {
+                width: 24%;
+            }
+
+            .mern__definition {
+                
+            }
+        }
     
         .skills__jo {
             position: relative;
             display: flex;
             justify-content: center;
             align-items: center;
-            margin: 50px 0;
+            margin: 80px 0;
     
             & img {
                 width: 90%; //
@@ -290,13 +337,119 @@
                 font-size: 24px;
             }
         }
+
+        .mern {
+            flex-direction: column;
+            margin-top: 80px;
+            
+            .mern__image {
+                width: 26%;
+            }
+
+            .mern__definition {
+                font-size: 14px;
+            }
+        }
     
         .skills__jo {
             position: relative;
             display: flex;
             justify-content: center;
             align-items: center;
-            margin: 50px 0;
+            margin: 80px 0;
+    
+            & img {
+                width: 100%; //
+            }
+        }
+    
+        .skills__wheels {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .skills__citation {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            font-size: 12px;
+            line-height: 1.5; //
+    
+            .citation__texte {
+                margin: 0 4px; //
+            }
+    
+            .citation__svg {
+                fill: gold;
+                font-size: 30px; //
+            }
+        }
+    }
+}
+
+.skills__type {
+    color: rgb(65, 200, 254);
+}
+
+.skills__hook {
+    color: rgb(247, 65, 65);
+}
+
+.blue {
+    color: rgb(65, 200, 254);
+}
+
+#target--skills {
+    position: absolute;
+    bottom: 150px;
+}
+
+@media screen and (max-width: 450px) {
+    .skills {
+        width: 100%;
+        min-height: 0;
+        background-color: rgb(1, 54, 86);
+        display: flex;
+        flex-direction: column;
+    
+        .skills__info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(1, 54, 86);
+            color: white;
+            height: 30px;
+            font-weight: bold;
+            white-space: nowrap;
+            margin-top: 150px;
+            font-size: 20px;
+    
+            .skills__title {
+                font-size: 24px;
+            }
+        }
+
+        .mern {
+            flex-direction: column;
+            margin-top: 80px;
+            
+            .mern__image {
+                width: 35%;
+            }
+
+            .mern__definition {
+                font-size: 12px;
+            }
+        }
+    
+        .skills__jo {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 80px 0;
     
             & img {
                 width: 100%; //
